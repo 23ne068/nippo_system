@@ -27,14 +27,10 @@ venv/
 ENV/
 
 # Nippo System Data (Huge files or local logs)
-nippo_system/data/logs.db
-nippo_system/data/*.log
-nippo_system/data/*.png
-nippo_system/data/ocr_results*
+nippo_system/data/
 nippo_system/raw_streams/
 nippo_system/transformer/semantic_data/
-nippo_system/reports/*.yaml
-nippo_system/reports/*.md
+nippo_system/reports/
 Nippo_OCR_App/
 data/
 raw_streams/
