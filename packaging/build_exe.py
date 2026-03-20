@@ -5,7 +5,7 @@ import PyInstaller.__main__
 def build():
     # スクリプトの場所（packaging/）の親ディレクトリをルートとする
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    main_script = os.path.join(root_dir, "nippo_system", "gui_app.py")
+    main_script = os.path.join(root_dir, "nippo_system", "main.py")
     
     hidden_imports = [
         "customtkinter",

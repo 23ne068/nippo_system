@@ -9,7 +9,7 @@ Nippoシステムのディレクトリ構成定義書です。
 Nippo/
 ├── nippo_system/        # メインアプリケーション・ソースコード
 │   ├── core/            # 設定・共通クラス
-│   ├── gui_app.py       # GUIエントリーポイント
+│   ├── main.py          # GUIエントリーポイント (旧 gui_app.py)
 │   ├── ocr/             # OCRエンジンのラッパー
 │   ├── input_monitor/   # 入力監視モジュール
 │   ├── transformer/     # データ抽出・意味付け・日報生成ロジック
