@@ -1,0 +1,35 @@
+
+--- Block ID: 1 (Font 20px) ---
+LINE: これはO C R エンジンの性能限界を検証するための特殊なデータセットです。第一段落で
+LINE: は、
+LINE: 密度の高い日本語テキストがどのように行として認識され、垂直方向のパラメータによっ
+LINE: て
+LINE: 正しく分離されるかを確認します。
+LINE: 第二段落では、文字の太さやフォントの鮮明さが認識精度に与える影響を評価します。
+LINE: 特に、スケーリング倍率を上げた際に、これまで潰れていた文字がどれほど綺麗に
+LINE: 復元されるかが鍵となります。
+LINE: 第三段落は、最終的な本番環境への導入に向けた検証です。
+LINE: 処理速度と精度のトレードオフを考慮し、最もバランスの取れた
+LINE: 「黄金率」を導き出すためのデータを提供します。
+LINE: META | Height: 20 | Lines: 10 
+
+--- Block ID: 2 (Font 16px) ---
+LINE: The technical validation phase focuses on the disambiguation of similar characters. 
+LINE: In this section, we test English text density and horizontal separation. 
+LINE: The engine must distinguish between adjacent columns without merging unrelated words. 
+LINE: Stability and robustness are key. By increasing the scaling factor up to 2.6x, 
+LINE: we expect a significant drop in character error rates. This block facilitates 
+LINE: the evaluation of horizontal grouping distances and their impact on context. 
+LINE: META | Height: 16 | Lines: 8 
+
+--- Block ID: 3 (Font 12px) ---
+LINE: Mixed character set: [OCR-TEST-VN-2026] 0123456789 ABCDEFGHIJKLMNOPQRSTUVWXYZ. 
+LINE: この極小フォント領域はスケーリングの限界テスト用です。
+LINE: META | Height: 12 | Lines: 2 
+
+--- Block ID: 4 (Font 18px) ---
+LINE: [   ユーザー設定  ]   -   このテキストは枠
+LINE: 線（タブ）に囲まれています。
+LINE: 枠線と文字の癒着が起きないかをテストします
+LINE: 。
+LINE: META | Height: 18 | Lines: 2 
