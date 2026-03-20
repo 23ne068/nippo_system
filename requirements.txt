@@ -1,0 +1,10 @@
+opencv-python
+pynput
+pywin32
+pytesseract
+vosk
+sounddevice
+numpy
+mss
+ultralytics
+watchdog

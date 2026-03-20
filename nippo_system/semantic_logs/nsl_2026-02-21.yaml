@@ -1,0 +1,791 @@
+# Nippo Semantic Log (NSL) - 2026-02-21
+- time_window: '23:20'
+  active_app: Nippo - Antigravity - structure.md●
+  input_activity:
+    keys: 119
+    mouse_clicks: 7376
+  ocr_context: "4 raw_streams トー core/ [Core] 共通 設定 と 共有 デー タ config.py シス テム 全体 の\
+    \ 設定 (パス 、 フ ラグ 上 storage.py SQLite ログ 保存 ロジ ッ ク トー ocr/ [Feature] 画面 解析 モジ ュー\
+    \ ル ト run ocr.py 実行 エン トリ (プロ セス 分 離 用 上 screen_ocr.py OCR エン ジン の 呼び 出し と Tsv\
+    \ 書 き 出し トー audio/ [Feature] 音声 解析 モジ ュー ル (現在 未 使 用 トー run_audio. py L_ audiolistener.\
+    \ py トー input_monitor/ [Feature] 入力 活動 監視 モジ ュー ル ーー run_input.py Lー input monitor.py\
+    \ トー raw_streams/ [Data] 各 モ ジュ ー ル が 吐き 出す Tsv ス トリ ー ム (Stage 1) L_ data/ [Internal]\
+    \ モデ ルフ ァイル や SoLite DB 本 体 9 19 11 12 13 14 15 16 17 18 19 20 21 i, [Internal]\
+    \ モデ ルフ ァイル や SouLite DB £2 23 24 25 26 2. (Ded View 1 edited file config.py Alt+L\
+    \ BUAT Lid. TU background command ツ Nippo CG FR 〇 ーー ソー ン てい ハ ビビ ン © nippo_system\
+    \ 9 ©_pycache_ © audio Ce core data © docs\\ ocr research © input_monitor © ocr\
+    \ 9 © Oo © reporter tests © user_state utils v venv Include Lib Scripts © share\
+    \ ® gitignore 4} pyvenv.cfg main.py 円 vosk-model-small-ja-0.22.zip © ocr_lab や\
+    \ gitignore 円 build_installer.iss ® build.spec >. create_shortcut.ps1 M+ future_roadmap.md\
+    \ Killing zombie process 12316: C:\\Users\\y86as\\AppData\\Local\\Microsoft \\\
+    WindowsApps... Killing zombie process 13832: C:\\Users\\y86as\\AppData\\Local\\\
+    Microsoft \\WindowsApps... Killing zombie process 10304: C:\\Users\\y86as\\AppData\\\
+    Local\\Microsoft \\WindowsApps... Starting module: nippo system.input_monitor.run_input\
+    \ Starting module: nippo system.ocr.run_ocr Screen OCR Process Started (Production)\
+    \ マロ Nippo_OCR_App C8 resources 5) src ン © nippo_system 、 ©_pycache_ © audio Ce\
+    \ core の © data © docs\\ocr_research © input_monitor © ocr ® © raw_streams © reporter\
+    \ C& tests © user_state utils © venv ®@ main.py vosk-model-small-ja-0.22.zip ©\
+    \ ocr_lab © gitignore build_installer.iss ® build.spec >. create_shortcut.ps1\
+    \ M+ future_roadmap.md m+ README.md requirements.txt M+ system_structure.md 3337\
+    \ \\WindowsApps... Killing zombie process 10304: C:\\Users\\y86as\\AppData\\Local\\\
+    Microsoft Starting module: nippo_system.input_monitor-.run_input Starting module:\
+    \ nippo system.ocr.run_ocr Screen OCR Process Started (Production) DEBUG: Found\
+    \ 13 raw blocks after clustering (h_limit=20) [OCR] Processed in: 19.4558s I've\
+    \ confirmed that 電 main.py now runs entirely within the local nippo_system folder.\
+    \ The Audio module is disabled, and TSV logs are successfully being written to\
+    \ the local raw_streams/ directory. I've also provided a structure.md file that\
+    \ explains the decoupled architecture. All Phase 11 tasks are complete. Files\
+    \ Edited config.py =Task [) Implementation Plan Background Steps Running background\
+    \ command .\\nippo_system python main.py 5 Killing zombie process 13832: C:\\\
+    Users\\y86as\\AppData\\Local\\Microsott \\WindowsApps... Killing zombie process\
+    \ 10304: C:\\Users\\y86as\\AppData\\Local\\Microsoft Starting module: nippo system.input_monitor-.run_input\
+    \ Starting module: system.ocr.run_ocr Screen OCR Process Started (Production)\
+    \ DEBUG: Found 13 raw blocks after clustering (h_limit=20) [OCR] Processed in:\
+    \ 10.4558s © venv structure.md UJ oupling) に つい て WT つ し MOUULe. Ocr Screen OCR\
+    \ Process Started (Production) DEBUG: Found 13 raw blocks after clustering (h_limit=20)\
+    \ [OCR] Processed in: 10.4558s DEBUG: Found 3 raw blocks after clustering (h_limit=20)\
+    \ [OCR] Processed in: 5.3373s DEBUG: Found 6 raw blocks after clustering (h_limit=20)\
+    \ [OCR] Processed in: 6.6828s DEBUG: Found 8 raw blocks after clustering (h_limit=20)\
+    \ [OCR] Processed in: 7.0667s Always run Cancel Progress Updates Expand all Creating\
+    \ implementation plan for local path standardization and decoupling verification\
+    \ 2 Updating task.md and preparing structure documentation 3 Standardizing paths\
+    \ in core/config.py and disabling Audio module 4 Re-verifying local execution\
+    \ with localized paths and Audio disabled 5 Terminating test process and finalizing\
+    \ documentation 失礼 いた し まし た ご 指摘 通り 、 開発 環境 の nippo system 内 で デー タ が 完結 する よう\
+    \ に 設定 を 修 正 し 、 未 使用 の Audio モジ ュー ル を 無効 化し まし た 。 修正 内 容 1. ロー カル バス 化 core/config.py\
+    \ を 修正 し 、 デ ー タ の 保存 先 を フォ ル ダ で は な く 、 プ ロジ ェクト 直下 の nippo_system/raw_streams/\
+    \ に 変更 し まし た 。 2. Audio モジ ュー ル の 無効 化 現在 使用 し て いな いた め 、 ENABLE_AUDIO False\
+    \ に 設定 し まし た 。 これ に より main.py 実行 時 に Audio プロ セス が 起動 し な く な り ま し た 。 orFiles\
+    \ With Changes Y= Review Changes ワ ヒ り ロ FOUTIU 15 (il [OCR] Processed in: 10.4558s\
+    \ DEBUG: Found 3 raw blocks after clustering (h_limit=20) [OCR] Processed in:\
+    \ 5.3373s DEBUG: Found 6 raw blocks after clustering (h limit=20) IOCR| Processed\
+    \ in: 6.6828s DEBUG: Found 8 raw blocks after clustering (h_limit=20) [OCR] Processed\
+    \ in: 7.9667s DEBUG: Found 9 raw blocks after clustering (h limit=20) 441 ワ ヒ\
+    \ り ロ FOUTIU つ DIUCKS (il Limit—20) [OCR] Processed in: 5.3373s DEBUG: Found 6\
+    \ raw blocks after clustering (h_limit=20) [OCR] Processed in: 6.6828s DEBUG:\
+    \ Found 8 raw blocks after clustering (h limit=20) IOCR| Processed in: DEBUG:\
+    \ Found 9 raw blocks after clustering (h_limit=20) [OCR] Processed in: 7.4159s\
+    \ DEBUG: Found 5 raw blocks after clustering (h limit=20) 3.8628 GEO é © audio\
+    \ Cé core 人 © data © docs\\ocr_research © input_monitor © ocr © raw_streams ©\
+    \ reporter tests © user_state utils © venv main.py vosk-model-small-ja-0.22.zip\
+    \ © ocr_lab © gitignore build_installer.iss ® build.spec >. create_shortcut.ps1\
+    \ M+ future_roadmap.md m+ README.md ®@ requirements.txt M+ system_structure.md\
+    \ Refactoring Nippo System +O X rounu © raw procks ニ _|[OCR] Processed in: DEBUG:\
+    \ Found 8 raw blocks after clustering (h_limit=20) [OCR] Processed in: DEBUG:\
+    \ Found 9 raw blocks after clustering (h_limit=20) [OCR] Processed in: 7.4159s\
+    \ DEBUG: Found 5 raw blocks after clustering (h_limit=20) [OCR] Processed in:\
+    \ DEBUG: Found 5 raw blocks after clustering (h_limit=20) [OCR] Processed in:\
+    \ 3.5956s Always run へ Cancel Progress Updates Expand all Creating implementation\
+    \ plan for local path standardization and decoupling verification 2 Updating task.md\
+    \ and preparing structure documentation 3 Standardizing paths in core/c: Drop\
+    \ to add to Agent \\udio module 4 Re-verifying local execution with localized\
+    \ paths and Audio disabled 5 Terminating test process and finalizing documentation\
+    \ 失礼 いた し まし た ご 指摘 通り 、 開発 環境 の nippo system 内 で デー タ が 完結 する よう に 設定 を 修 正 し\
+    \ 、 未 使用 の Audio モジ ュー ル を 無効 化し まし た 。 修正 内 容 1. ロ カ ル パ バス 化 core/configpy を\
+    \ 修正 し 、 デ ー タ の 保存 先 を Documents フォ ル ダ で は な く 、 プ ロジ ェクト 直下 の mippo に 変更 し\
+    \ まし た 。 2. Audio モジ ュー ル の 無効 化 現在 使用 し て いな いた め 、 ENABLE AUDIO False に 設定 し\
+    \ まし た 。 CHUCKY 実行 時 に Audio プロ セス が 起動 し なくなり まし た 。 (5 o Files With Changes\
+    \ Review Changes Ask for workflows A Planning へ Gemini 3 Flash og Nippo Antigravity\
+    \ structure.mde …・ input_stream_2026-02-21.tsv m+ structuremd U (3 Refactoring\
+    \ Nippo System +O … X \\ippo_system 7 ™+ structure.md EF nippo_system 。 フォ ル ダ\
+    \ 構 成 と 設計 方 針 ## 1. ティ レク トリ 構成 リヒ D り ロ O [OCR] Processed in: 7.9667s 1 nippo_system\
+    \ フォ ル ダ 構 成 と 設計 方 針 fie DEBUG: Found 9 raw blocks after clustering (h_limit=20)\
+    \ 3 1. テイ レク トリ 構成 _- [OCR] Processed in: 7.4159s ーー 9 ーー core/ [Core] 共通 設定 と\
+    \ 共有 デー タ DEBUG: Found 5 raw blocks after clustering (h_limit=20) 10 config.py\
+    \ シス テム 全体 の 設定 (パス 、 フ ラグ EE [OCR] Processed in: a L_ SQLite ログ 保存 ロジ ッ ク DEBUG:\
+    \ Found 5 raw blocks after clustering (h_limit=20) 12 ーー ocr/ [Feature] 画面 解析\
+    \ モジ ュー ル [OCR] Processed in: 3.5956s 13 トー run_ocr.py 実行 エン トリ (プロ セス 分 離 用 DEBUG:\
+    \ Found 3 raw blocks after clustering (h_limit=20) 回 14 screen_ocr.py OCR エン ジン\
+    \ の 呼び 出し と Tsv 書 き 出 し 15 audio/ F [Feature] 音声 解析 モジ ュー ル (現在 未 使 Always run\
+    \ FA) 16 上 run_audio.py 17 L_ audiolistener. py Progress Updates Expand all bad\
+    \ 18 input_monitor/ ロ ロ [Feature] 入力 活動 活動 監視 監視 モジ モジ ュー ュー ル Creating implementation\
+    \ plan for local path standardization and decoupling ー 1 verification 20 L_ input_monitor.py\
+    \ 21 ーー raw streams/ [Data] 各 モ ジュ ー ル が 吐き 出す Tsv ス トリ 2 Updating task.md and\
+    \ preparing structure documentation SA L_(Stage — 3 Standard ndardizing 。. paths\
+    \ th in core/config.py fig. and d disabling disabling Aud Audio module dul data/\
+    \ [Internal] モデ ルフ ァイル や soLite DB 本 体 4 Re-verifying local execution with localized\
+    \ paths and Audio disabled 5 Terminating test process and finalizing documentation\
+    \ U 25 ## 2. 疎 結合 に つい て 2.zip 26 本 シス テム は 、 各 機能 が 互い に 依存 し な い 「 疎 結合 」 な\
+    \ 設計 を 採用 し て い 失礼 いた し まし た ご 指摘 通り 、 開発 環境 の jnippo system 内 で デー タ が 完結 する\
+    \ よう に 設定 を 修 PowerShell Extension v2925.4.9 powershell 修正 内 容 Copyright (c) Microsoft\
+    \ Corporation. [=] PowerShell ... 1. ロー カル バス 化 core/config.py を 修正 し 、 デ ー タ\
+    \ の 保存 先 を Documents フォルダ で は な く 、 プ https://aka.ms/vscode-powershel1 ロジ ェクト\
+    \ 直下 の に 変更 し まし た 。 Bes Wo 2. Audio モジ ュー ル の 無効 現在 使用 し て いな いた め 、 AUDIO False)\
+    \ に 設定 し まし た 。 PS C:\\Users\\y86as\\Nippo>[| どれ に より 実行 時 に Audio プロ ヤス が 起動\
+    \ し な く な り ま し た 。 [5 0Files with Changes ン ニ Review Changes [5 nippo_system\
+    \ 人 へ Planning Gemini 3 Flash od 回 上 書き $721,562 スペ ー ス :4 UTF-8 CRLF {} Markdown\
+    \ Antigravity-Settings OO 1 © audio Cé core © data © docs\\ocr_research © input_monitor\
+    \ © ocr © raw_streams © reporter C& tests © user_state utils © venv main.py M+\
+    \ structure.md vosk-model-small-ja-0.22.zip © ocr_lab © gitignore build_installer.iss\
+    \ ® build.spec >. create_shortcut.ps1 M+ future_roadmap.md m+ README.md ®@ requirements.txt\
+    \ M+ system_structure.md IOCR| Processed in:/.4159s DEBUG: Found 5 raw blocks\
+    \ after clustering (h_limit=20) [OCR] Processed in: 3.8628s IOCR| Processed in:\
+    \ 3.5956s DEBUG: Found 3 raw blocks after clustering (h_limit=20) [OCR] Processed\
+    \ in: 6.3012s DEBUG: Found 8 raw blocks after clustering (h limit=20) 14 5606s\
+    \ みた いな OQ 2 みれ ば いい 2 み 和 いい Qa. 3 見 つか り ま 4 見 5 られ る ao みて Q a ¥ ここ に raw_streams\
+    \ が {} 5 Terminating test process and finalizing documentation 失礼 いた し まし た ご\
+    \ 指摘 通り 、 開発 環境 の nippo system 内 で デー タ が 完結 する よう に 設定 を 修 正 し 、 未 使用 の Audio\
+    \ モジ ュー ル を 無効 化し まし た 。 修正 内 容 1. ロー カル バス 化 core/config.py を 修正 し 、 デ ー タ の\
+    \ 保存 先 を Documents_ フォ ル ダ で は な く 、 プ ロジ ェクト 直下 の nippo_system/raw_streams/ に\
+    \ 変更 し まし た 。 2. Audio モジ ュー ル の 無効 化 現在 使用 し て いな いた め 、 ENABLE_AUDTO False に\
+    \ 設定 し まし た 。 これ に より main_py 実行 時 に Audio プロ セス が 起動 し な く な り ま し た 。 3. 構成\
+    \ ドキ ュ メ の 作成 structure.md を 作成 し まし た 。 ここ で ディ レク トリ 構成 と 結合 各 モジ ュー ル が 独立\
+    \ し た プロ セス で 動き 、 TSV フ ァイル を 介し て の み 対 話す る 設計 に つい て 解説 し て いま す 。 動作 確認 済み\
+    \ 1. python main-py を 実行 し 、 streams/ocr/ 等 に 正しく ログ が 書き 込ま れ る こと を 確認 し まし\
+    \ た 。 2. プロ セス 一 覧 を 確認 し 、 Audio プロ セス が 動い て いな いこ と を 確認 し まし た 。 新しい フォ ル\
+    \ ダ 構 成 図 (structure.md も 含め 、 ご 確認 いた だ け ま す で し ょ うか 。 M+ structure.md Open\
+    \ config.py Open Running With Changes ン Review Changes i ksk anything, to mention,\
+    \ for workflows \\U 1. ロー カル バス 化 core/config.py を 修正 し 、 デ ー タ の 保存 先 を フォ ル\
+    \ ダ で は な く 、 プ ロジ ェクト 直下 の nippo_system/raw_streams/ に 変更 し まし た 。 2. Audio モジ\
+    \ ュー ル の 無効 化 現在 使用 し て いな いた め 、 ENABLE_AUDTO False に 設定 し まし た 。 これ に より main.py\
+    \ 実行 時 に Audio プロ セス が 起動 し な く な り ま し た 。 3. 構成 ドキ ュ メ ント の 作成 を 作成 し まし た 。\
+    \ ここ で ディ レク トリ 構成 と 結合 各 モジ ュー ル が 独立 し た プロ セス で 動き 、 TSV フ ァイル を 介し て の み 対\
+    \ 話す る 設計 に つい て 解説 し て いま す 。 動作 確認 済み 1. python main-py を 実行 し 、 nippo_ system/raw_streams/ocr/\
+    \ 等 に 正しく ログ が 書き 込ま れ る こと を 確認 し まし た 。 2. プロ セス 一 覧 を 確認 し 、 Audio プロ セス が\
+    \ 動い て いな いこ と を 確認 し まし た 。 新しい フォ ル ダ 構 成 図 (structure.md も 含め 、 ご 確認 だ け ま\
+    \ す で し ょ うか 。 M+ structure.md Open config.py Open Running.. Pending messages\
+    \ (5 nippo_system ここ に raw_streams が 見 当たら な い コ ター ミナ ル (T) ヘル プ (H) ファ イル (F)\
+    \ 編集 (E) ERIS) 表示 (V) 移動 (G) 実行 (R) Nippo Antigravity structure.mde View 1 edited\
+    \ file taskmd Alt+L © 583 x V4 Good © Bad Pending messages ここ に raw_streams が\
+    \ 見 当たら な い 回 2 eee ぐ 1 File With Changes Review requested 失礼 いた し まし た ご 指摘 通り\
+    \ 、 開発 環境 の Ask anything, to mention, nippo_system 内 で デー タ が 完結 する よう に 設定 を\
+    \ 修正 し 、\n23:22:14\t0\t[863, 763, 885, 924]\t未 使用 の Audio モジ ュー ル を 無効 化し まし た\
+    \ 。\n23:22:14\t0\t[883, 655, 895, 752]\tA Planning 人 へ Gemini 3 Flas\n23:22:14\t\
+    0\t[759, 765, 772, 816]\tA Antigravity\n23:22:14\t0\t[928, 812, 937, 829]\tCRLF\n\
+    23:22:14\t0\t[928, 841, 938, 890]\tて 7 Markdown\n23:22:14\t0\t[928, 901, 939,\
+    \ 943]\tAntigravity-\n23:22:14\t0\t[922, 985, 939, 990]\tた\n23:22:14\t0\t[963,\
+    \ 873, 980, 880]\tA\n23:22:37\t0\t[12, 259, 29, 340]\tター ミナ ル (T) ヘル プ (H)\n23:22:37\t\
+    0\t[12, 28, 29, 98]\tファ イル (F) 編集 (E\n23:22:37\t0\t[12, 145, 29, 210]\t表示 (V)\
+    \ 移動 (G)\n23:22:37\t0\t[14, 222, 28, 247]\t実行 (R)\n23:22:37\t0\t[14, 442, 28,\
+    \ 563]\tNippo Antigravity structure.mde\n23:22:37\t0\t[151, 269, 172, 322]\tトー\
+    \ main.py\n23:22:37\t0\t[151, 393, 173, 524]\t[Manager] 全 プ ロ セ ス を 個別 に\n23:22:37\t\
+    0\t[151, 546, 173, 570]\t起動 ・ 管 理\n23:22:37\t0\t[173, 269, 194, 311]\tトー core/\n\
+    23:22:37\t0\t[173, 393, 197, 518]\t[Core] 共通 設定 と 共有 デー タ\n23:22:37\t0\t[194,\
+    \ 284, 217, 352]\t[| config.py\n23:22:37\t0\t[195, 397, 218, 543]\tシス テム 全体 の\
+    \ 設定 (パス 、 フ ラグ\n23:22:37\t0\t[216, 285, 239, 357]\t上 storage.py\n23:22:37\t0\t\
+    [218, 392, 236, 499]\tSQLite ログ 保存 ロジ ッ ク\n23:22:37\t0\t[239, 269, 260, 306]\t\
+    トー ocr/\n23:22:37\t0\t[239, 393, 261, 525]\t[Feature] 画面 解析 モジ ュー ル\n23:22:37\t\
+    0\t[260, 287, 283, 357]\t上 run _ocr.py\n23:22:37\t0\t[261, 392, 284, 525]\t実行\
+    \ エン トリ (プロ セス 分 離 用\n23:22:37\t0\t[284, 289, 303, 372]\t上 screen_ocr.py\n23:22:37\t\
+    0\t[282, 396, 306, 549]\tOCR エン ジン の 呼び 出し と Tsv 書 き 出 し\n23:22:37\t0\t[305, 269,\
+    \ 325, 316]\tトー audio/\n23:22:37\t0\t[305, 393, 326, 571]\t[Feature] 音声 解析 モジ\
+    \ ュー ル (現在 未 使\n23:22:37\t0\t[329, 267, 347, 280]\t用\n23:22:37\t0\t[348, 289,\
+    \ 371, 367]\tーー run_audio. py\n23:22:37\t0\t[375, 307, 391, 387]\taudiolistener.py\n\
+    23:22:37\t0\t[393, 269, 413, 356]\tトー input_monitor/\n23:22:37\t0\t[393, 393,\
+    \ 415, 542]\t[Feature] 入力 活動 監視 モジ ュー ル\n23:22:37\t0\t[419, 307, 435, 367]\trun_input.py\n\
+    23:22:37\t0\t[436, 288, 458, 387]\tし input monitor.py\n23:22:37\t0\t[459, 269,\
+    \ 480, 346]\tトー raw_streams/\n23:22:37\t0\t[459, 393, 481, 568]\t[Data] 各 モ ジュ\
+    \ ー ル が 吐き 出す Tsv ス トリ\n23:22:37\t0\t[483, 267, 500, 334]\tー ム (Stage 1)\n23:22:37\t\
+    0\t[503, 269, 521, 311]\tL_ data/\n23:22:37\t0\t[507, 393, 522, 441]\t[Internal]\n\
+    23:22:37\t0\t[504, 455, 522, 565]\tモデ ルフ ァイル や Souite DB\n23:22:37\t0\t[525, 267,\
+    \ 548, 286]\t本 体\n23:22:37\t0\t[157, 245, 167, 250]\t8\n23:22:37\t0\t[179, 245,\
+    \ 189, 250]\t9\n23:22:37\t0\t[201, 240, 212, 250]\t18\n23:22:37\t0\t[223, 240,\
+    \ 233, 250]\t11\n23:22:37\t0\t[245, 240, 255, 250]\t12\n23:22:37\t0\t[267, 240,\
+    \ 277, 250]\t13\n23:22:37\t0\t[289, 240, 300, 250]\t14\n23:22:37\t0\t[311, 240,\
+    \ 321, 250]\t15\n23:22:37\t0\t[355, 240, 365, 250]\t16\n23:22:37\t0\t[377, 240,\
+    \ 387, 250]\t17\n23:22:37\t0\t[399, 240, 409, 250]\t18\n23:22:37\t0\t[421, 240,\
+    \ 431, 250]\t19\n23:22:37\t0\t[443, 240, 453, 250]\t29\n23:22:37\t0\t[465, 240,\
+    \ 476, 250]\t21\n23:22:37\t0\t[509, 240, 519, 250]\t22\n23:22:37\t0\t[553, 240,\
+    \ 563, 250]\t23\n23:22:37\t0\t[575, 240, 585, 250]\t24\n23:22:37\t0\t[597, 240,\
+    \ 607, 250]\tES\n23:22:37\t0\t[567, 355, 597, 419]\tView 1 edited file\n23:22:37\t\
+    0\t[574, 430, 586, 482]\ttaskmd Alt+L\n23:22:37\t0\t[592, 267, 611, 403]\t## 2.\
+    \ ERG (Decoupling) に\n23:22:37\t0\t[9, 833, 29, 839]\tの\n23:22:37\t0\t[11, 863,\
+    \ 27, 875]\t583\n23:22:37\t0\t[14, 951, 25, 958]\tBl\n23:22:37\t0\t[16, 896, 23,\
+    \ 903]\tV4\n23:22:37\t0\t[74, 658, 83, 707]\tstructure.md\n23:22:37\t0\t[74, 948,\
+    \ 85, 965]\tUpen\n23:22:37\t0\t[135, 658, 151, 694]\tconfig.py\n23:22:37\t0\t\
+    [136, 948, 149, 965]\tOpen\n23:22:37\t0\t[220, 642, 242, 824]\t円 nippo_system\
+    \ ここ に raw_streams が 見 当たら な い\n23:22:37\t0\t[221, 968, 235, 976]\tの\n23:22:37\t\
+    0\t[271, 649, 286, 704]\tThought for 3s\n23:22:37\t0\t[307, 639, 322, 782]\tVerifying\
+    \ Local raw_streams Presence\n23:22:37\t0\t[330, 640, 344, 834]\tI've confirmed\
+    \ that the raw_streams folder exists at\n23:22:37\t0\t[353, 642, 372, 947]\tc:\\\
+    Users\\y86as\\Nippo\\nippo system\\raw_streams I'm now listing its contents to\n\
+    23:22:37\t0\t[381, 640, 396, 966]\tdouble-check that the ocr and input subdirectories\
+    \ are also present, so can provide\n23:22:37\t0\t[407, 639, 422, 732]\tyou with\
+    \ the exact paths.\n23:22:37\t0\t[449, 640, 463, 704]\tProgress Updates\n23:22:37\t\
+    0\t[481, 642, 496, 912]\t1 Listing nippo_system directory to verify raw_streams\
+    \ folder creation\n23:22:37\t0\t[449, 923, 463, 974]\tCollapse all マ\n23:22:37\t\
+    0\t[516, 654, 532, 838]\t© Analyzed c:\\Users\\y86as\\Nippo\\nippo_system\n23:22:37\t\
+    0\t[563, 652, 578, 967]\tListing subdirectories of raw_streams to provide complete\
+    \ path information to the\n23:22:37\t0\t[592, 652, 599, 668]\tuser\n23:22:37\t\
+    0\t[624, 668, 640, 701]\tAnalyzed\n23:22:37\t0\t[688, 634, 703, 678]\tGenerating..\n\
+    23:22:37\t0\t[770, 751, 782, 983]\tmini\\antigravity\\brain\\d9982f5d-95aa-4ace-94c7-4125cd04d130\\\
+    task.md\n23:22:37\t0\t[795, 892, 819, 983]\tReject all ‘Accept all Vv\n23:22:37\t\
+    0\t[844, 751, 855, 801]\tfor workflows\n23:22:37\t0\t[884, 751, 894, 757]\tsh\n\
+    23:22:37\t0\t[925, 752, 937, 771]\tー ズ ・4\n23:22:37\t0\t[926, 812, 937, 829]\t\
+    CRLF\n23:22:37\t0\t[924, 841, 938, 890]\t{} Markdown\n23:22:37\t0\t[926, 948,\
+    \ 939, 973]\tSettings\n23:22:37\t0\t[957, 983, 967, 987]\tノ\n23:22:37\t0\t[963,\
+    \ 872, 980, 880]\t5\n23:22:51\t0\t[84, 156, 103, 212]\tGEO é\n23:22:51\t0\t[212,\
+    \ 53, 228, 111]\t©_pycache_\n23:22:51\t0\t[238, 53, 251, 87]\tBD audio\n23:22:51\t\
+    0\t[268, 66, 276, 82]\tcore\n23:22:51\t0\t[265, 206, 273, 210]\to\n23:22:51\t\
+    0\t[290, 66, 302, 82]\tdata\n23:22:51\t0\t[314, 53, 327, 83]\tCe docs\n23:22:51\t\
+    0\t[339, 53, 356, 119]\t© input_monitor\n23:22:51\t0\t[365, 53, 378, 78]\t© ocr\n\
+    23:22:51\t0\t[367, 206, 375, 210]\to\n23:22:51\t0\t[416, 59, 429, 92]\t© audio\n\
+    23:22:51\t0\t[441, 58, 458, 91]\t© input\n23:22:51\t0\t[467, 58, 480, 83]\t© ocr\n\
+    23:22:51\t0\t[469, 206, 477, 210]\to\n23:22:51\t0\t[492, 58, 507, 100]\t© ui meta\n\
+    23:22:51\t0\t[518, 53, 534, 97]\t© reporter\n23:22:51\t0\t[547, 66, 556, 83]\t\
+    tests\n23:22:51\t0\t[569, 53, 583, 104]\t© user_state\n23:22:51\t0\t[594, 53,\
+    \ 608, 81]\tC utils\n23:22:51\t0\t[620, 53, 633, 83]\tDB venv\n23:22:51\t0\t[644,\
+    \ 53, 662, 96]\t®@ main.py\n23:22:51\t0\t[672, 53, 683, 113]\tM+ structure.md\n\
+    23:22:51\t0\t[672, 206, 682, 211]\tU\n23:22:51\t0\t[695, 54, 713, 174]\t[) vosk-model-small-ja-0.22.zip\n\
+    23:22:51\t0\t[722, 48, 736, 87]\t© ocr_lab\n23:22:51\t0\t[746, 48, 764, 97]\t\
+    © gitignore\n23:22:51\t0\t[773, 61, 787, 123]\tbuild_installer.iss\n23:22:51\t\
+    0\t[798, 48, 814, 98]\t® build.spec\n23:22:51\t0\t[824, 48, 840, 132]\t>. create_shortcut.ps1\n\
+    23:22:51\t0\t[850, 48, 865, 134]\tM+ future_roadmap.md\n23:22:51\t0\t[79, 642,\
+    \ 94, 912]\t1 Listing nippo_system directory to verify raw_streams folder creation\n\
+    23:22:51\t0\t[112, 652, 127, 967]\tListing subdirectories of raw_streams to provide\
+    \ complete path information to the\n23:22:51\t0\t[141, 652, 149, 668]\tuser\n\
+    23:22:51\t0\t[188, 640, 208, 969]\t失礼 いた し まし た 。 確か に c:\\Users\\y86as\\Nippo\\\
+    nippo_system\\raw streams フォ ル ダ が 存在\n23:22:51\t0\t[208, 640, 235, 715]\tする と\
+    \ を 確認 し まし た 。\n23:22:51\t0\t[239, 640, 253, 664]\tフォ ル ダ\n23:22:51\t0\t[238,\
+    \ 684, 254, 737]\tは 以下 の 通り で す\n23:22:51\t0\t[282, 645, 291, 659]\ttext\n23:22:51\t\
+    0\t[275, 948, 293, 957]\teC\n23:22:51\t0\t[318, 648, 335, 769]\tc:¥Users¥y86as¥N\
+    \ i ppo¥ni ppo_system¥\n23:22:51\t0\t[339, 651, 352, 716]\tトーー raw_streams/\n\
+    23:22:51\t0\t[360, 669, 373, 705]\tトー ocr/\n23:22:51\t0\t[358, 753, 376, 827]\t\
+    一 OCR の TSV は ここ で す\n23:22:51\t0\t[380, 669, 394, 712]\tトー input/\n23:22:51\t\
+    0\t[379, 763, 397, 845]\t入力 活動 の TSV は ここ で す\n23:22:51\t0\t[401, 669, 414, 712]\t\
+    トー audio/\n23:22:51\t0\t[423, 691, 436, 719]\tui_meta/\n23:22:51\t0\t[442, 651,\
+    \ 456, 691]\tトー core/\n23:22:51\t0\t[463, 651, 476, 687]\tトー ocr/\n23:22:51\t\
+    0\t[494, 673, 496, 682]\teee\n23:22:51\t0\t[529, 640, 551, 967]\tも し か する と 、\
+    \ エクスプロー ラー 上 で 表示 が 更新 され て いな い 可 能 性 が ある た め 、 一 度 フ ォ ル ダ 内 を 更新\n23:22:51\t\
+    0\t[556, 645, 571, 847]\t(F5) し て いた だ く か 、 直接 パス を 叩い て いた だ けれ ば 幸い で す 。\n\
+    23:22:51\t0\t[578, 640, 600, 971]\tも し それ で も 見 当たら な い 場 合 、 別 の 場所 に 作成 され て\
+    \ いる 可能 性 が ある た め 、 再度 詳し く 調査 いた し\n23:22:51\t0\t[603, 640, 624, 656]\tます 。\n\
+    23:22:51\t0\t[658, 658, 673, 694]\tconfig.py\n23:22:51\t0\t[659, 948, 670, 965]\t\
+    Open\n23:22:51\t0\t[714, 916, 729, 969]\tGood © Bad\n23:22:51\t0\t[801, 690, 816,\
+    \ 742]\tWith Changes\n23:22:51\t0\t[800, 909, 814, 975]\tン ニ Review Changes\n\
+    23:23:04\t0\t[13, 222, 31, 253]\t実行 (R)\n23:23:04\t0\t[13, 276, 26, 284]\tナル\n\
+    23:23:04\t0\t[13, 309, 31, 340]\tヘル プ\n23:23:04\t0\t[14, 416, 27, 589]\tNippo\
+    \ Antigravity input_stream_2026-02-21.tsv\n23:23:04\t0\t[52, 222, 67, 251]\tspec.md\n\
+    23:23:04\t0\t[52, 278, 63, 347]\tM+ structure.md U\n23:23:04\t0\t[52, 388, 67,\
+    \ 503]\tinput_stream_2026-02-21.tsv U\n23:23:04\t0\t[48, 535, 69, 545]\tal\n23:23:04\t\
+    0\t[82, 233, 97, 340]\tnippo_system raw_streams\n23:23:04\t0\t[82, 351, 97, 370]\t\
+    input\n23:23:04\t0\t[82, 395, 97, 502]\tinput_stream_2026-02-21.tsv\n23:23:04\t\
+    0\t[108, 240, 118, 249]\t15\n23:23:04\t0\t[108, 267, 118, 307]\t23:21:27\n23:23:04\t\
+    0\t[106, 327, 122, 352]\tNippo\n23:23:04\t0\t[106, 367, 122, 422]\tAntigravity\n\
+    23:23:04\t0\t[106, 438, 118, 512]\tstructure.mde 9\n23:23:04\t0\t[108, 528, 118,\
+    \ 537]\t78\n23:23:04\t0\t[100, 581, 140, 622]\tiis\n23:23:04\t0\t[129, 240, 139,\
+    \ 249]\t16\n23:23:04\t0\t[129, 267, 139, 307]\t23:21:32\n23:23:04\t0\t[127, 327,\
+    \ 143, 352]\tNippo\n23:23:04\t0\t[127, 367, 143, 422]\tAntigravity\n23:23:04\t\
+    0\t[127, 438, 139, 532]\tstructure.mde 11 9\n23:23:04\t0\t[152, 240, 162, 249]\t\
+    17\n23:23:04\t0\t[151, 267, 162, 307]\t23:21:37\n23:23:04\t0\t[149, 327, 165,\
+    \ 352]\tNippo\n23:23:04\t0\t[149, 367, 165, 422]\tAntigravity\n23:23:04\t0\t[149,\
+    \ 438, 162, 512]\tstructure.mde 9\n23:23:04\t0\t[151, 527, 162, 537]\t42\n23:23:04\t\
+    0\t[174, 240, 184, 249]\t18\n23:23:04\t0\t[173, 267, 184, 307]\t23:21:42\n23:23:04\t\
+    0\t[172, 327, 187, 352]\tNippo\n23:23:04\t0\t[172, 367, 187, 422]\tAntigravity\n\
+    23:23:04\t0\t[172, 438, 184, 502]\tstructure.mde\n23:23:04\t0\t[173, 528, 184,\
+    \ 543]\t264\n23:23:04\t0\t[196, 240, 206, 249]\t19\n23:23:04\t0\t[196, 267, 206,\
+    \ 307]\t23:21:47\n23:23:04\t0\t[194, 327, 210, 352]\tNippo\n23:23:04\t0\t[194,\
+    \ 367, 210, 422]\tAntigravity\n23:23:04\t0\t[194, 438, 206, 502]\tstructure.mde\n\
+    23:23:04\t0\t[196, 528, 206, 532]\t1\n23:23:04\t0\t[217, 240, 227, 249]\t20\n\
+    23:23:04\t0\t[217, 267, 227, 307]\t23:21:52\n23:23:04\t0\t[215, 327, 231, 352]\t\
+    Nippo\n23:23:04\t0\t[215, 367, 231, 422]\tAntigravity\n23:23:04\t0\t[215, 438,\
+    \ 227, 502]\tstructure.mde\n23:23:04\t0\t[217, 528, 227, 542]\t120\n23:23:04\t\
+    0\t[239, 240, 249, 249]\t21\n23:23:04\t0\t[239, 267, 250, 307]\t23:21:57\n23:23:04\t\
+    0\t[233, 329, 256, 388]\t新しい 通知 9\n23:23:04\t0\t[239, 403, 250, 413]\t74\n23:23:04\t\
+    0\t[262, 240, 272, 249]\t22\n23:23:04\t0\t[262, 267, 272, 307]\t23:22:02\n23:23:04\t\
+    0\t[260, 327, 276, 352]\tNippo\n23:23:04\t0\t[260, 367, 276, 422]\tAntigravity\n\
+    23:23:04\t0\t[260, 438, 272, 502]\tstructure.mde\n23:23:04\t0\t[262, 528, 272,\
+    \ 542]\t122\n23:23:04\t0\t[284, 240, 294, 249]\t23\n23:23:04\t0\t[284, 267, 294,\
+    \ 307]\t23:22:07\n23:23:04\t0\t[282, 327, 298, 352]\tNippo\n23:23:04\t0\t[282,\
+    \ 367, 298, 422]\tAntigravity\n23:23:04\t0\t[282, 438, 294, 502]\tstructure.mde\n\
+    23:23:04\t0\t[284, 528, 294, 537]\t61\n23:23:04\t0\t[305, 240, 315, 250]\t24\n\
+    23:23:04\t0\t[305, 267, 315, 307]\t23:22:17\n23:23:04\t0\t[303, 327, 319, 352]\t\
+    Nippo\n23:23:04\t0\t[303, 367, 319, 422]\tAntigravity\n23:23:04\t0\t[303, 438,\
+    \ 315, 502]\tstructure.mde\n23:23:04\t0\t[305, 528, 315, 543]\t174\n23:23:04\t\
+    0\t[327, 240, 337, 249]\t25\n23:23:04\t0\t[327, 267, 337, 307]\t23:22:22\n23:23:04\t\
+    0\t[325, 327, 341, 352]\tNippo\n23:23:04\t0\t[325, 367, 341, 422]\tAntigravity\n\
+    23:23:04\t0\t[325, 438, 337, 502]\tstructure.mde\n23:23:04\t0\t[327, 528, 337,\
+    \ 537]\t58\n23:23:04\t0\t[350, 240, 360, 249]\t26\n23:23:04\t0\t[349, 267, 360,\
+    \ 307]\t23:22:27\n23:23:04\t0\t[347, 327, 363, 352]\tNippo\n23:23:04\t0\t[347,\
+    \ 367, 363, 422]\tAntigravity\n23:23:04\t0\t[347, 438, 360, 502]\tstructure.mde\n\
+    23:23:04\t0\t[349, 528, 360, 542]\t167\n23:23:04\t0\t[372, 240, 382, 249]\t27\n\
+    23:23:04\t0\t[372, 267, 382, 307]\t23:22:32\n23:23:04\t0\t[370, 327, 386, 352]\t\
+    Nippo\n23:23:04\t0\t[370, 367, 386, 422]\tAntigravity\n23:23:04\t0\t[370, 438,\
+    \ 382, 512]\tstructure.mde 9\n23:23:04\t0\t[372, 528, 382, 537]\t85\n23:23:04\t\
+    0\t[393, 240, 403, 249]\t28\n23:23:04\t0\t[393, 267, 403, 307]\t23:22:37\n23:23:04\t\
+    0\t[391, 327, 407, 352]\tNippo\n23:23:04\t0\t[391, 367, 407, 422]\tAntigravity\n\
+    23:23:04\t0\t[391, 438, 403, 502]\tstructure.mde\n23:23:04\t0\t[393, 528, 403,\
+    \ 542]\t346\n23:23:04\t0\t[415, 240, 425, 249]\t29\n23:23:04\t0\t[415, 267, 426,\
+    \ 307]\t23:22:42\n23:23:04\t0\t[413, 327, 429, 352]\tNippo\n23:23:04\t0\t[413,\
+    \ 367, 429, 422]\tAntigravity\n23:23:04\t0\t[413, 438, 426, 502]\tstructure.mde\n\
+    23:23:04\t0\t[415, 528, 426, 542]\t211\n23:23:04\t0\t[437, 240, 447, 249]\t30\n\
+    23:23:04\t0\t[437, 267, 448, 307]\t23:22:47\n23:23:04\t0\t[436, 327, 452, 352]\t\
+    Nippo\n23:23:04\t0\t[436, 367, 452, 422]\tAntigravity\n23:23:04\t0\t[434, 438,\
+    \ 453, 573]\t1nput stream 2926 -92- 21 .tsV\n23:23:04\t0\t[460, 240, 470, 249]\t\
+    31\n23:23:04\t0\t[71, 17, 77, 18]\t1\n23:23:04\t0\t[390, 41, 405, 112]\tン © raw_streams\n\
+    23:23:04\t0\t[416, 59, 429, 92]\t© audio\n23:23:04\t0\t[441, 46, 458, 91]\tマン\
+    \ D input\n23:23:04\t0\t[466, 77, 484, 184]\tinput_stream_2026-02-21.tsv\n23:23:04\t\
+    0\t[468, 206, 478, 211]\tU\n23:23:04\t0\t[516, 77, 534, 176]\tocr_stream_2026-02-21.tsv\n\
+    23:23:04\t0\t[519, 206, 529, 211]\tU\n23:23:04\t0\t[543, 60, 558, 100]\t© ui meta\n\
+    23:23:04\t0\t[569, 53, 585, 97]\t© reporter\n23:23:04\t0\t[598, 66, 607, 83]\t\
+    tests\n23:23:04\t0\t[620, 53, 634, 104]\t© user_state\n23:23:04\t0\t[645, 53,\
+    \ 659, 81]\t[2 utils\n23:23:04\t0\t[675, 66, 683, 84]\tvenv\n23:23:04\t0\t[695,\
+    \ 53, 712, 96]\t®@ main.py\n23:23:04\t0\t[723, 53, 734, 113]\tM+ structure.md\n\
+    23:23:04\t0\t[723, 206, 733, 211]\tU\n23:23:04\t0\t[748, 66, 763, 174]\tvosk-model-small-ja-0.22.zip\n\
+    23:23:04\t0\t[773, 49, 787, 88]\t© ocr_lab\n23:23:04\t0\t[797, 48, 814, 97]\t\
+    © gitignore\n23:23:04\t0\t[824, 61, 837, 123]\tbuild_installer.iss\n23:23:04\t\
+    0\t[848, 48, 865, 99]\t® build.spec\n23:23:04\t0\t[923, 687, 939, 762]\t行 1、 列\
+    \ 1 スペ ー ス :4\n23:23:04\t0\t[926, 773, 937, 793]\tUTF-8\n23:23:04\t0\t[926, 804,\
+    \ 937, 821]\tCRLF\n23:23:04\t0\t[923, 832, 939, 890]\t{} プレ ー ソ テキ スト\n23:23:13\t\
+    0\t[13, 272, 26, 284]\tミ ナル\n23:23:13\t0\t[13, 309, 31, 340]\tヘル プ\n23:23:13\t\
+    0\t[14, 420, 28, 585]\tNippo Antigravity ocr_stream_2026-02-21.tsv\n23:23:13\t\
+    0\t[52, 278, 63, 347]\tM+ structure.md U\n23:23:13\t0\t[53, 387, 66, 507]\tocr_stream_2026-02-21tvU\
+    \ X\n23:23:13\t0\t[50, 521, 65, 529]\t@®\n23:23:13\t0\t[84, 266, 93, 283]\tstem\n\
+    23:23:13\t0\t[84, 295, 95, 340]\traw_streams\n23:23:13\t0\t[86, 351, 93, 362]\t\
+    ocr\n23:23:13\t0\t[83, 387, 95, 487]\tocr_stream_2026-02-21.tsv\n23:23:13\t0\t\
+    [112, 267, 129, 462]\t2, 48, 737, 132]>. create shortcut.ps1\n23:23:13\t0\t[134,\
+    \ 267, 151, 452]\t8, 48, 763, 135] M+ future_roadmap.md\n23:23:13\t0\t[157, 267,\
+    \ 173, 411]\t3, 48, 785, 107] m+ README.md\n23:23:13\t0\t[178, 267, 194, 432]\t\
+    9, 61, 814, 122] requirements.txt\n23:23:13\t0\t[200, 267, 216, 462]\t4, 48, 839,\
+    \ 137] M+ system structure.md\n23:23:13\t0\t[195, 581, 222, 613]\tES\n23:23:13\t\
+    0\t[222, 267, 239, 351]\t4, 757, 583, 775]\n23:23:13\t0\t[224, 372, 235, 392]\t\
+    3337\n23:23:13\t0\t[222, 581, 241, 613]\tWES\n23:23:13\t0\t[245, 267, 261, 351]\t\
+    3, 645, 606, 713]\n23:23:13\t0\t[266, 267, 282, 351]\t4, 645, 627, 961]\n23:23:13\t\
+    0\t[266, 372, 282, 516]\tKilling zombie process 10304:\n23:23:13\t0\t[288, 267,\
+    \ 304, 351]\t7, 645, 679, 891]\n23:23:13\t0\t[288, 372, 304, 576]\tStarting module:\
+    \ nippo_system.input_monit\n23:23:13\t0\t[310, 267, 327, 351]\t7, 645, 690, 836]\n\
+    23:23:13\t0\t[310, 372, 327, 576]\tStarting module: nippo system.ocr.run_ocr\n\
+    23:23:13\t0\t[333, 267, 349, 351]\t7, 645, 711, 826]\n23:23:13\t0\t[333, 372,\
+    \ 349, 566]\tScreen OCR Process Started (Production)\n23:23:13\t0\t[328, 581,\
+    \ 351, 614]\ties\n23:23:13\t0\t[354, 267, 370, 351]\t9, 645, 733, 905]\n23:23:13\t\
+    0\t[354, 372, 366, 576]\tDEBUG: Found 13 raw blocks after clusteri\n23:23:13\t\
+    0\t[376, 267, 392, 351]\t1, 646, 754, 775]\n23:23:13\t0\t[376, 373, 392, 512]\t\
+    [OCR] Processed in: 19.4558s\n23:23:13\t0\t[398, 267, 415, 351]\t@, 640, 306,\
+    \ 967]\n23:23:13\t0\t[396, 372, 415, 576]\tI've confirmed that 電 main.py now runs\
+    \ e\n23:23:13\t0\t[420, 267, 437, 351]\t7, 639, 332, 958]\n23:23:13\t0\t[420,\
+    \ 372, 437, 577]\tThe Audio module is disabled, and Tsv log\n23:23:13\t0\t[442,\
+    \ 267, 458, 351]\t1, 642, 356, 806]\n23:23:13\t0\t[437, 391, 459, 613]\tstreams/\
+    \ directory. I've also provide\n23:23:13\t0\t[464, 267, 480, 351]\t1, 822, 356,\
+    \ 951]\n23:23:13\t0\t[464, 372, 480, 547]\tstructure.md file that explains the\n\
+    23:23:13\t0\t[486, 267, 503, 351]\t8, 639, 383, 848]\n23:23:13\t0\t[486, 372,\
+    \ 502, 577]\tdecoupled architecture. All Phase 11 task\n23:23:13\t0\t[508, 267,\
+    \ 525, 351]\t1, 640, 421, 681]\n23:23:13\t0\t[508, 372, 521, 432]\tFiles Edited\n\
+    23:23:13\t0\t[530, 267, 546, 351]\t6, 652, 451, 688]\n23:23:13\t0\t[526, 584,\
+    \ 548, 613]\tES:\n23:23:13\t0\t[552, 267, 568, 351]\t4, 762, 451, 885]\n23:23:13\t\
+    0\t[552, 372, 568, 512]\t=Task |) Implementation Plan\n23:23:13\t0\t[574, 267,\
+    \ 591, 351]\t7, 640, 492, 706]\n23:23:13\t0\t[575, 372, 591, 452]\tBackground\
+    \ Steps\n23:23:13\t0\t[570, 581, 593, 612]\tie\n23:23:13\t0\t[598, 267, 611, 301]\t\
+    3, 646,\n23:23:13\t0\t[597, 468, 609, 502]\tcommand\n23:23:13\t0\t[114, 235, 125,\
+    \ 250]\t129\n23:23:13\t0\t[137, 235, 147, 250]\t130\n23:23:13\t0\t[158, 235, 169,\
+    \ 250]\t131\n23:23:13\t0\t[180, 235, 190, 250]\t132\n23:23:13\t0\t[202, 235, 213,\
+    \ 250]\t133\n23:23:13\t0\t[224, 235, 235, 250]\t134\n23:23:13\t0\t[246, 235, 257,\
+    \ 250]\t135\n23:23:13\t0\t[268, 235, 278, 250]\t136\n23:23:13\t0\t[290, 235, 300,\
+    \ 250]\t137\n23:23:13\t0\t[312, 235, 323, 250]\t138\n23:23:13\t0\t[334, 235, 345,\
+    \ 250]\t139\n23:23:13\t0\t[355, 235, 366, 250]\t140\n23:23:13\t0\t[378, 235, 388,\
+    \ 250]\t141\n23:23:13\t0\t[400, 235, 411, 250]\t142\n23:23:13\t0\t[422, 235, 433,\
+    \ 250]\t143\n23:23:13\t0\t[444, 235, 454, 250]\t144\n23:23:13\t0\t[466, 235, 476,\
+    \ 250]\t145\n23:23:13\t0\t[488, 235, 499, 250]\t146\n23:23:13\t0\t[510, 235, 521,\
+    \ 250]\t147\n23:23:13\t0\t[532, 235, 542, 250]\t148\n23:23:13\t0\t[554, 235, 564,\
+    \ 250]\t149\n23:23:13\t0\t[576, 235, 586, 250]\t158\n23:23:13\t0\t[598, 235, 609,\
+    \ 250]\t151\n23:23:13\t0\t[217, 43, 225, 47]\t7\n23:23:13\t0\t[238, 53, 251, 87]\t\
+    © audio\n23:23:13\t0\t[264, 53, 277, 82]\tCé core\n23:23:13\t0\t[288, 54, 301,\
+    \ 82]\t© data\n23:23:13\t0\t[314, 53, 327, 83]\tCe docs\n23:23:13\t0\t[339, 53,\
+    \ 356, 119]\t© input_monitor\n23:23:13\t0\t[365, 53, 378, 78]\t© ocr\n23:23:13\t\
+    0\t[389, 41, 407, 57]\tン D\n23:23:13\t0\t[416, 58, 429, 92]\t© audio\n23:23:13\t\
+    0\t[440, 46, 459, 91]\tマン © input\n23:23:13\t0\t[444, 206, 452, 210]\t9\n23:23:13\t\
+    0\t[466, 77, 484, 184]\tinput_stream_2026-02-21.tsv\n23:23:13\t0\t[468, 207, 478,\
+    \ 211]\tU\n23:23:13\t0\t[497, 71, 505, 83]\tocr\n23:23:13\t0\t[543, 60, 558, 100]\t\
+    © ui_meta\n23:23:13\t0\t[569, 53, 585, 97]\t© reporter\n23:23:13\t0\t[594, 53,\
+    \ 607, 83]\tC& tests\n23:23:13\t0\t[620, 53, 634, 104]\t© user_state\n23:23:13\t\
+    0\t[645, 53, 658, 81]\tC utils\n23:23:13\t0\t[675, 66, 683, 84]\tvenv\n23:23:13\t\
+    0\t[697, 67, 712, 96]\tmain.py\n23:23:13\t0\t[722, 53, 734, 113]\tM+ structure.md\n\
+    23:23:13\t0\t[723, 207, 733, 211]\tU\n23:23:13\t0\t[958, 983, 967, 986]\t34\n\
+    23:23:19\t0\t[101, 235, 110, 250]\t2160\n23:23:19\t0\t[122, 235, 132, 250]\t217\n\
+    23:23:19\t0\t[144, 235, 154, 250]\t218\n23:23:19\t0\t[166, 235, 176, 250]\t219\n\
+    23:23:19\t0\t[187, 235, 198, 250]\t220\n23:23:19\t0\t[210, 235, 220, 250]\t221\n\
+    23:23:19\t0\t[232, 235, 242, 250]\t222\n23:23:19\t0\t[254, 235, 265, 250]\t223\n\
+    23:23:19\t0\t[275, 235, 286, 250]\t224\n23:23:19\t0\t[297, 235, 308, 250]\t225\n\
+    23:23:19\t0\t[320, 235, 330, 250]\t226\n23:23:19\t0\t[342, 235, 352, 250]\t227\n\
+    23:23:19\t0\t[363, 235, 374, 250]\t228\n23:23:19\t0\t[386, 235, 396, 250]\t229\n\
+    23:23:19\t0\t[408, 235, 418, 250]\t230\n23:23:19\t0\t[430, 235, 440, 250]\t231\n\
+    23:23:19\t0\t[451, 235, 462, 250]\t232\n23:23:19\t0\t[473, 235, 484, 250]\t233\n\
+    23:23:19\t0\t[496, 235, 506, 250]\t234\n23:23:19\t0\t[518, 235, 529, 250]\t235\n\
+    23:23:19\t0\t[539, 235, 550, 250]\t236\n23:23:19\t0\t[561, 235, 572, 250]\t237\n\
+    23:23:19\t0\t[583, 235, 594, 250]\t238\n23:23:19\t0\t[100, 267, 114, 341]\t» 434,\
+    \ 80,/61|\n23:23:19\t0\t[120, 267, 136, 416]\t» 846, 83, 900](il Limit-29)\n23:23:19\t\
+    0\t[119, 581, 141, 613]\thes\n23:23:19\t0\t[142, 267, 158, 487]\t» 646, 104, 770][OCR]\
+    \ Processed in: 5.3373s\n23:23:19\t0\t[164, 267, 180, 351]\t9, 645, 125, 900]\n\
+    23:23:19\t0\t[159, 372, 182, 614]\tDEBUG: Found 6 raw blocks after clusterin ES\n\
+    23:23:19\t0\t[185, 267, 202, 351]\t3, 646, 146, 770]\n23:23:19\t0\t[185, 373,\
+    \ 202, 507]\t[OCR] Processed in: 6.6828s\n23:23:19\t0\t[208, 267, 224, 351]\t\
+    3, 645, 165, 900]\n23:23:19\t0\t[208, 372, 220, 577]\tDEBUG: Found 8 raw blocks\
+    \ after clusterin|\n23:23:19\t0\t[230, 267, 246, 351]\t5, 646, 189, 732]\n23:23:19\t\
+    0\t[230, 402, 242, 466]\tProcessed in:\n23:23:19\t0\t[252, 267, 268, 351]\t5,\
+    \ 645, 209, 900]\n23:23:19\t0\t[252, 372, 265, 577]\tDEBUG: Found 9 raw blocks\
+    \ after clusterin\n23:23:19\t0\t[273, 267, 290, 351]\t7, 646, 230, 770]\n23:23:19\t\
+    0\t[273, 373, 290, 507]\t[OCR] Processed in: 7.4159s\n23:23:19\t0\t[295, 267,\
+    \ 312, 351]\t7, 645, 250, 900]\n23:23:19\t0\t[295, 372, 308, 577]\tDEBUG: Found\
+    \ 5 raw blocks after clusterin\n23:23:19\t0\t[293, 603, 315, 614]\tis\n23:23:19\t\
+    0\t[318, 267, 334, 351]\t@, 739, 270, 766]\n23:23:19\t0\t[320, 372, 330, 402]\t\
+    3.8628\n23:23:19\t0\t[313, 581, 337, 614]\tAEs\n23:23:19\t0\t[361, 267, 378, 387]\t\
+    8, 53, 251, 87]© audio\n23:23:19\t0\t[356, 581, 383, 613]\tWes\n23:23:19\t0\t\
+    [383, 267, 400, 387]\t4, 53, 277, 82] Cé core\n23:23:19\t0\t[383, 581, 402, 613]\t\
+    es\n23:23:19\t0\t[406, 267, 422, 351]\t9, 205, 277, 207]\n23:23:19\t0\t[404, 372,\
+    \ 420, 381]\tA\n23:23:19\t0\t[402, 581, 424, 614]\tWe\n23:23:19\t0\t[449, 267,\
+    \ 466, 447]\tA, 54, 328, 136]© docs\\ocr_research\n23:23:19\t0\t[445, 581, 468,\
+    \ 614]\teS\n23:23:19\t0\t[464, 267, 489, 427]\t9, 53, 356, 119]© input monitor\n\
+    23:23:19\t0\t[494, 267, 510, 377]\t5, 53, 378, 78]© ocr\n23:23:19\t0\t[516, 267,\
+    \ 532, 357]\t@, 54, 405, 112]©\n23:23:19\t0\t[537, 267, 554, 402]\t6, 53, 432,\
+    \ 97]© reporter\n23:23:19\t0\t[533, 581, 557, 614]\tHes\n23:23:19\t0\t[559, 267,\
+    \ 576, 377]\t5, 66, 454, 83] tests\n23:23:19\t0\t[582, 267, 598, 412]\t7, 53,\
+    \ 481, 104]© user_state\n23:23:19\t0\t[238, 53, 251, 87]\tDB audio\n23:23:19\t\
+    0\t[264, 53, 277, 82]\tCé core\n23:23:19\t0\t[265, 206, 273, 210]\t回\n23:23:19\t\
+    0\t[289, 53, 301, 82]\t© data\n23:23:19\t0\t[314, 53, 327, 83]\tCe docs\n23:23:19\t\
+    0\t[339, 53, 356, 119]\t© input_monitor\n23:23:19\t0\t[365, 54, 378, 78]\t© ocr\n\
+    23:23:19\t0\t[367, 206, 375, 210]\t回\n23:23:19\t0\t[390, 41, 405, 112]\tv © raw_streams\n\
+    23:23:19\t0\t[416, 58, 429, 92]\t© audio\n23:23:19\t0\t[467, 58, 480, 83]\tDB\
+    \ ocr\n23:23:19\t0\t[469, 205, 477, 210]\te\n23:23:19\t0\t[492, 58, 507, 100]\t\
+    © ui_meta\n23:23:19\t0\t[518, 53, 534, 97]\t© reporter\n23:23:19\t0\t[543, 53,\
+    \ 556, 83]\tC& tests\n23:23:19\t0\t[569, 53, 583, 104]\t© user_state\n23:23:19\t\
+    0\t[595, 66, 607, 81]\tutils\n23:23:19\t0\t[620, 53, 633, 83]\tBD venv\n23:23:19\t\
+    0\t[646, 67, 662, 96]\tmain.py\n23:23:19\t0\t[671, 53, 683, 113]\tM+ structure.md\n\
+    23:23:19\t0\t[671, 206, 682, 211]\tU\n23:23:19\t0\t[695, 54, 713, 174]\t円 vosk-model-small-ja-0.22.zip\n\
+    23:23:19\t0\t[722, 48, 736, 88]\t© ocr_lab\n23:23:19\t0\t[746, 48, 764, 97]\t\
+    や gitignore\n23:23:19\t0\t[773, 61, 787, 123]\tbuild_installer.iss\n23:23:19\t\
+    0\t[798, 48, 814, 98]\t® build.spec\n23:23:19\t0\t[824, 48, 839, 132]\t>. create_shortcut.ps1\n\
+    23:23:19\t0\t[850, 48, 865, 134]\tM+ future_roadmap.md\n23:23:33\t0\t[101, 240,\
+    \ 110, 255]\t210\n23:23:33\t0\t[121, 240, 132, 255]\t217\n23:23:33\t0\t[144, 240,\
+    \ 154, 255]\t218\n23:23:33\t0\t[166, 240, 177, 255]\t219\n23:23:33\t0\t[187, 240,\
+    \ 198, 255]\t220\n23:23:33\t0\t[209, 240, 220, 255]\t221\n23:23:33\t0\t[232, 240,\
+    \ 242, 255]\t222\n23:23:33\t0\t[254, 240, 265, 255]\t223\n23:23:33\t0\t[275, 240,\
+    \ 286, 255]\t224\n23:23:33\t0\t[297, 240, 308, 255]\t225\n23:23:33\t0\t[320, 240,\
+    \ 330, 255]\t226\n23:23:33\t0\t[342, 240, 353, 255]\t227\n23:23:33\t0\t[363, 240,\
+    \ 374, 255]\t228\n23:23:33\t0\t[385, 240, 396, 255]\t229\n23:23:33\t0\t[408, 240,\
+    \ 418, 255]\t230\n23:23:33\t0\t[430, 240, 440, 255]\t231\n23:23:33\t0\t[451, 240,\
+    \ 462, 255]\t232\n23:23:33\t0\t[473, 240, 484, 255]\t233\n23:23:33\t0\t[496, 240,\
+    \ 506, 255]\t234\n23:23:33\t0\t[518, 240, 528, 255]\t235\n23:23:33\t0\t[539, 240,\
+    \ 550, 255]\t236\n23:23:33\t0\t[561, 240, 572, 255]\t237\n23:23:33\t0\t[584, 240,\
+    \ 594, 255]\t238\n23:23:33\t0\t[100, 273, 114, 346]\t» 434, 80,/61|\n23:23:33\t\
+    0\t[142, 273, 158, 492]\t» 646, 104, 770][OCR] Processed in: 5.3373s\n23:23:33\t\
+    0\t[164, 272, 180, 356]\t@, 645, 125, 900]\n23:23:33\t0\t[164, 377, 177, 576]\t\
+    DEBUG: Found 6 raw blocks after clusteri\n23:23:33\t0\t[185, 272, 202, 356]\t\
+    3, 646, 146, 770]\n23:23:33\t0\t[185, 378, 202, 512]\t[OCR] Processed in: 6.6828s\n\
+    23:23:33\t0\t[208, 272, 224, 356]\t3, 645, 165, 900]\n23:23:33\t0\t[208, 413,\
+    \ 220, 576]\tFound 8 raw blocks after clusteri\n23:23:33\t0\t[204, 589, 226, 596]\t\
+    |)\n23:23:33\t0\t[230, 272, 246, 356]\t5, 646, 189, 732]\n23:23:33\t0\t[229, 378,\
+    \ 246, 471]\tIOCR| Processed in:\n23:23:33\t0\t[252, 272, 268, 356]\t5, 645, 209,\
+    \ 900]\n23:23:33\t0\t[252, 377, 265, 576]\tDEBUG: Found 9 raw blocks after clusteri\n\
+    23:23:33\t0\t[273, 272, 290, 356]\t7, 646, 230, 770]\n23:23:33\t0\t[273, 378,\
+    \ 290, 512]\t[OCR] Processed in: 7.4159s\n23:23:33\t0\t[295, 272, 312, 356]\t\
+    7, 645, 250, 900]\n23:23:33\t0\t[291, 377, 315, 614]\tDEBUG: Found 5 raw blocks\
+    \ after clusteri AS\n23:23:33\t0\t[318, 272, 334, 356]\t@, 739, 270, 766]\n23:23:33\t\
+    0\t[320, 378, 330, 407]\t3.8628\n23:23:33\t0\t[340, 273, 356, 382]\t» 156, 103,\
+    \ 212] GEO é\n23:23:33\t0\t[335, 581, 361, 613]\the\n23:23:33\t0\t[361, 272, 378,\
+    \ 392]\t8, 53, 251, 87]© audio\n23:23:33\t0\t[361, 581, 379, 613]\taes\n23:23:33\t\
+    0\t[383, 272, 400, 392]\t4, 53, 277, 82] Ce core\n23:23:33\t0\t[408, 272, 421,\
+    \ 331]\t@, 205, 277,\n23:23:33\t0\t[404, 377, 420, 386]\t人\n23:23:33\t0\t[402,\
+    \ 587, 424, 614]\tES\n23:23:33\t0\t[428, 272, 444, 387]\t8, 54, 302, 82]© data\n\
+    23:23:33\t0\t[424, 581, 446, 614]\tESS\n23:23:33\t0\t[449, 272, 466, 452]\tA,\
+    \ 54, 328, 136]© docs\\ocr_research\n23:23:33\t0\t[445, 581, 466, 614]\tSs\n23:23:33\t\
+    0\t[471, 272, 488, 432]\t9, 53, 356, 119]© input_monitor\n23:23:33\t0\t[494, 272,\
+    \ 510, 346]\t5, 53, 378, 78]\n23:23:33\t0\t[516, 272, 532, 363]\t@, 54, 405, 112]©\n\
+    23:23:33\t0\t[511, 581, 535, 614]\tes\n23:23:33\t0\t[537, 272, 554, 407]\t6, 53,\
+    \ 432, 97]© reporter\n23:23:33\t0\t[559, 272, 576, 382]\t5, 66, 454, 83] tests\n\
+    23:23:33\t0\t[582, 272, 598, 417]\t7, 53, 481, 104]© user_state\n23:23:33\t0\t\
+    [578, 581, 600, 588]\t上\n23:23:33\t0\t[606, 273, 611, 276]\tA\n23:23:33\t0\t[606,\
+    \ 287, 611, 296]\tce\n23:23:33\t0\t[606, 307, 611, 321]\tcharac\n23:23:33\t0\t\
+    [604, 332, 611, 346]\to11\n23:23:33\t0\t[601, 365, 612, 376]\tエモ ュ ュ\n23:23:33\t\
+    0\t[216, 653, 229, 663]\tWe\n23:23:33\t0\t[441, 58, 458, 91]\t© input\n23:23:33\t\
+    0\t[444, 206, 452, 210]\te\n23:23:33\t0\t[622, 633, 639, 664]\t1 うー ん\n23:23:33\t\
+    0\t[626, 714, 637, 721]\tOQ\n23:23:33\t0\t[659, 632, 675, 670]\t2 うー ル ん, と\n\
+    23:23:33\t0\t[662, 714, 675, 721]\tQ\n23:23:33\t0\t[681, 732, 688, 736]\toa\n\
+    23:23:33\t0\t[700, 714, 712, 721]\tQ\n23:23:33\t0\t[697, 733, 715, 735]\t。\n23:23:33\t\
+    0\t[698, 632, 714, 680]\t3 うー ん と ね\n23:23:33\t0\t[736, 632, 752, 663]\t4 ウー ン\n\
+    23:23:33\t0\t[739, 714, 750, 721]\tOQ\n23:23:33\t0\t[774, 632, 793, 684]\t5 うー\
+    \ ん うー ん\n23:23:33\t0\t[776, 714, 788, 721]\tQ\n23:23:33\t0\t[816, 630, 823, 651]\t\
+    ay\n23:23:33\t0\t[810, 727, 828, 737]\t(¥\n23:23:33\t0\t[838, 637, 860, 655]\t\
+    5-Al\n23:23:37\t0\t[606, 640, 624, 656]\tKI o\n23:23:37\t0\t[656, 648, 673, 694]\t\
+    つ config.py\n23:23:37\t0\t[796, 639, 818, 742]\tぐ [5 0 Files with Changes\n23:23:37\t\
+    0\t[838, 700, 859, 709]\t?|\n23:23:51\t0\t[84, 156, 103, 212]\tGEO é\n23:23:51\t\
+    0\t[474, 241, 484, 254]\t233\n23:23:51\t0\t[461, 272, 493, 412]\t9, 53, 356, 119]©\
+    \ input mon\n23:23:51\t0\t[496, 241, 506, 255]\t234\n23:23:51\t0\t[494, 272, 510,\
+    \ 382]\t5, 53, 378, 78]© ocr\n23:23:51\t0\t[540, 241, 550, 255]\t236\n23:23:51\t\
+    0\t[539, 272, 552, 326]\t6, 53, 432,\n23:23:51\t0\t[539, 357, 553, 407]\t© reporter\n\
+    23:23:51\t0\t[562, 241, 572, 255]\t237\n23:23:51\t0\t[560, 272, 575, 382]\t5,\
+    \ 66, 454, 83] tests\n23:23:51\t0\t[584, 241, 594, 255]\t238\n23:23:51\t0\t[582,\
+    \ 272, 598, 363]\t7, 53, 481, 104]©\n23:23:51\t0\t[625, 236, 637, 251]\t問題\n23:23:51\t\
+    0\t[625, 267, 637, 281]\t出力\n23:23:51\t0\t[621, 298, 645, 353]\tデバ ッ グ コッ ソー ル\n\
+    23:23:51\t0\t[621, 369, 645, 398]\tター ミナ ル\n23:23:51\t0\t[659, 236, 671, 377]\t\
+    PowerShell Extension v2@25.4.0\n23:23:51\t0\t[672, 207, 682, 211]\t。\n23:23:51\t\
+    0\t[679, 235, 695, 403]\tCopyright (c) Microsoft Corporation.\n23:23:51\t0\t[708,\
+    \ 234, 740, 263]\thttps:\n23:23:51\t0\t[740, 235, 756, 347]\tType ‘help’ to get\
+    \ help.\n23:23:51\t0\t[783, 236, 792, 245]\tpc\n23:23:51\t0\t[776, 353, 792, 357]\t\
+    |]\n23:23:51\t0\t[843, 706, 856, 729]\t、 じゃあ\n23:23:55\t0\t[518, 241, 528, 255]\t\
+    235\n23:23:55\t0\t[516, 272, 532, 362]\t@, 54, 405, 112]©\n23:23:55\t0\t[535,\
+    \ 248, 544, 254]\tユー\n23:23:55\t0\t[535, 271, 544, 276]\tデー\n23:23:55\t0\t[539,\
+    \ 287, 544, 296]\tc>\n23:23:55\t0\t[539, 308, 544, 321]\t4 つつ\n23:23:55\t0\t[537,\
+    \ 332, 544, 346]\tnal\n23:24:08\t0\t[13, 259, 30, 298]\tダー= ナ ル\n23:24:08\t0\t\
+    [13, 309, 30, 340]\tヘル プ\n23:24:08\t0\t[13, 438, 29, 567]\tNippo Antigravity ai_data_spec.md\n\
+    23:24:08\t0\t[55, 230, 61, 238]\tm+\n23:24:08\t0\t[53, 310, 63, 316]\tX\n23:24:08\t\
+    0\t[52, 343, 64, 399]\tstructure.md U\n23:24:08\t0\t[53, 439, 66, 530]\tocr_stream_2026-02-21t\n\
+    23:24:08\t0\t[50, 542, 66, 545]\t8\n23:24:08\t0\t[52, 576, 65, 578]\tと\n23:24:08\t\
+    0\t[57, 603, 59, 612]\t…\n23:24:08\t0\t[82, 233, 97, 311]\tnippo_system docs\n\
+    23:24:08\t0\t[82, 322, 95, 368]\tocr_research\n23:24:08\t0\t[82, 380, 97, 454]\t\
+    ™+ ai_data_spec.md\n23:24:08\t0\t[80, 486, 97, 622]\tF Nippo OCR: モジ ュー ル 型 デー\
+    \ タバ イプ\n23:24:08\t0\t[106, 245, 116, 249]\t1\n23:24:08\t0\t[103, 278, 120, 343]\t\
+    E Nippo ocr:\n23:24:08\t0\t[100, 354, 122, 556]\tモモ ジュール 型 デー タ パ イ プラ イン (Modular\
+    \ Data\n23:24:08\t0\t[100, 581, 120, 595]\tーー\n23:24:08\t0\t[128, 240, 138, 249]\t\
+    26\n23:24:08\t0\t[122, 267, 144, 492]\t##1. Stage 1: スト リー ム ご と の 保存 (Recording)\n\
+    23:24:08\t0\t[149, 240, 159, 249]\t28\n23:24:08\t0\t[145, 267, 166, 382]\tテー タ\
+    \ を 源 泉 (スト リー ム\n23:24:08\t0\t[148, 394, 161, 398]\tJ\n23:24:08\t0\t[145, 468,\
+    \ 166, 485]\tREL\n23:24:08\t0\t[145, 593, 169, 603]\tニー\n23:24:08\t0\t[171, 240,\
+    \ 181, 249]\t29\n23:24:08\t0\t[214, 240, 225, 249]\t31\n23:24:08\t0\t[208, 278,\
+    \ 231, 451]\tmain.py 全 プ ロ セ ス を 統合 管理 ・ 起 動\n23:24:08\t0\t[237, 240, 247, 249]\t\
+    32\n23:24:08\t0\t[231, 323, 252, 365]\t共通 設定\n23:24:08\t0\t[231, 439, 252, 471]\t\
+    永 続 化\n23:24:08\t0\t[259, 240, 269, 249]\t33\n23:24:08\t0\t[253, 318, 276, 418]\t\
+    画面 解析 、 テ キス ト 抽 出\n23:24:08\t0\t[281, 240, 291, 250]\t34\n23:24:08\t0\t[275,\
+    \ 278, 297, 417]\taudio/~: 音声 録音 、 文 字 起 こし\n23:24:08\t0\t[302, 240, 312, 249]\t\
+    35\n23:24:08\t0\t[296, 278, 318, 486]\tinput monitor/~: キー ボー ド 、 マ ウス 活動 監視\n\
+    23:24:08\t0\t[325, 240, 335, 249]\t36\n23:24:08\t0\t[347, 240, 357, 249]\t37.\n\
+    23:24:08\t0\t[341, 296, 364, 520]\tデー タス トリ ー ム の 保存 場所 Documents/Nippo_OCR/\n\
+    23:24:08\t0\t[390, 240, 400, 249]\t38\n23:24:08\t0\t[388, 277, 401, 302]\t**OCR\n\
+    23:24:08\t0\t[385, 314, 406, 526]\tスト リー ム **:~ocr/ocr stream YYYY-MM-DD .tsv~\n\
+    23:24:08\t0\t[412, 240, 423, 249]\t39\n23:24:08\t0\t[411, 352, 427, 392]\tblock_id\n\
+    23:24:08\t0\t[411, 408, 427, 437]\tbox_2d\n23:24:08\t0\t[435, 240, 445, 250]\t\
+    49\n23:24:08\t0\t[429, 277, 450, 364]\t** 音 声 ス トリ ー ム **:\n23:24:08\t0\t[433,\
+    \ 472, 449, 520]\tYYYY-MM-DD\n23:24:08\t0\t[457, 240, 467, 249]\t41\n23:24:08\t\
+    0\t[455, 288, 471, 337]\tTimestamp\n23:24:08\t0\t[455, 352, 467, 407]\ttranscribed\n\
+    23:24:08\t0\t[478, 240, 488, 249]\t42\n23:24:08\t0\t[472, 277, 494, 563]\t** 入\
+    \ 力 活動 スト リー ム **:~input/1nput stream YYYY-MM-DD .tsv~\n23:24:08\t0\t[500, 240,\
+    \ 511, 249]\t43\n23:24:08\t0\t[499, 288, 514, 337]\tTimestamp\n23:24:08\t0\t[498,\
+    \ 352, 515, 412]\twindow title\n23:24:08\t0\t[499, 428, 515, 472]\tkey count\n\
+    23:24:08\t0\t[498, 488, 515, 546]\tmouse count~\n23:24:08\t0\t[523, 240, 533,\
+    \ 250]\t44\n23:24:08\t0\t[520, 277, 533, 342]\t**UT Metadata\n23:24:08\t0\t[517,\
+    \ 355, 539, 504]\tスト リー ム **:~ui meta/~(計画 中\n23:24:08\t0\t[545, 240, 555, 249]\t\
+    45\n23:24:08\t0\t[543, 288, 559, 337]\tTimestamp\n23:24:08\t0\t[546, 353, 559,\
+    \ 412]\tprocess name\n23:24:08\t0\t[543, 428, 559, 477]\tarea label\n23:24:08\t\
+    0\t[541, 492, 560, 506]\tbox\n23:24:08\t0\t[566, 240, 576, 249]\t46\n23:24:08\t\
+    0\t[193, 240, 203, 250]\t30\n23:24:08\t0\t[588, 240, 598, 249]\t47\n23:24:08\t\
+    0\t[238, 53, 251, 87]\tDB audio\n23:24:08\t0\t[264, 53, 277, 82]\tCé core\n23:24:08\t\
+    0\t[265, 206, 273, 210]\t回\n23:24:08\t0\t[289, 53, 301, 82]\t© data\n23:24:08\t\
+    0\t[314, 41, 328, 136]\tvy © docs\\ocr_research\n23:24:08\t0\t[339, 58, 356, 98]\t\
+    Ca images\n23:24:08\t0\t[392, 58, 405, 212]\tM+ behind_the_scenes_reconstruction.md\n\
+    23:24:08\t0\t[417, 58, 432, 186]\tm+ coordinate_mapping_proof.md\n23:24:08\t0\t\
+    [443, 58, 458, 164]\tM+ implementation_plan.md\n23:24:08\t0\t[468, 58, 483, 148]\t\
+    M+ system_structure.md\n23:24:08\t0\t[494, 58, 505, 100]\tM+ task.md\n23:24:08\t\
+    0\t[519, 58, 532, 166]\tM+ visual_diff_verification.md\n23:24:08\t0\t[545, 58,\
+    \ 560, 184]\tM+ visual_pipeline_breakdown.md\n23:24:08\t0\t[570, 58, 585, 132]\t\
+    m+ walkthrough.md\n23:24:08\t0\t[594, 53, 611, 119]\t© input_monitor\n23:24:08\t\
+    0\t[620, 53, 633, 78]\t© ocr\n23:24:08\t0\t[621, 206, 630, 210]\tる\n23:24:08\t\
+    0\t[645, 41, 660, 112]\tv D raw_streams\n23:24:08\t0\t[671, 58, 684, 92]\t© audio\n\
+    23:24:08\t0\t[696, 58, 713, 91]\t© input\n23:24:08\t0\t[722, 58, 734, 83]\t© ocr\n\
+    23:24:08\t0\t[724, 206, 731, 210]\t人\n23:24:08\t0\t[747, 60, 762, 100]\t© ui_meta\n\
+    23:24:08\t0\t[773, 53, 788, 97]\t© reporter\n23:24:08\t0\t[801, 66, 811, 83]\t\
+    tests\n23:24:08\t0\t[824, 53, 838, 104]\t© user_state\n23:24:08\t0\t[849, 53,\
+    \ 862, 81]\tCG utils\n23:24:08\t0\t[920, 559, 941, 680]\t© Antigravity Al (16\
+    \ 分 前 』 上 書き\n23:24:08\t0\t[920, 691, 941, 771]\t行 59、 列 8 スペ ー ス :4\n23:24:08\t\
+    0\t[926, 781, 937, 802]\tUTF-8\n23:24:08\t0\t[926, 812, 937, 829]\tCRLF\n23:24:08\t\
+    0\t[924, 840, 938, 890]\t{} Markdown\n23:24:24\t0\t[15, 529, 24, 530]\t1\n23:24:24\t\
+    0\t[17, 446, 27, 451]\tDI\n23:24:24\t0\t[17, 543, 27, 562]\tpec.m\n23:24:24\t\
+    0\t[82, 222, 97, 270]\t)ata Pipeline)\n23:24:24\t0\t[78, 306, 99, 456]\t1. Stage\
+    \ 1: スト リー ム ご と の 保存 (Recording)\n23:24:24\t0\t[78, 479, 99, 617]\t### ソー スコ\
+    \ ー ド の 構成 (nippo_system/)\n23:24:24\t0\t[151, 282, 172, 492]\t1. Stage 1: スト\
+    \ リー ム ご と の 保存 (Recording)\n23:24:24\t0\t[135, 240, 145, 250]\t25\n23:24:24\t\
+    0\t[157, 240, 167, 250]\t26\n23:24:24\t0\t[178, 240, 189, 250]\t27\n23:24:24\t\
+    0\t[200, 240, 211, 250]\t28\n23:24:24\t0\t[222, 240, 233, 250]\t29\n23:24:24\t\
+    0\t[245, 240, 255, 250]\t30\n23:24:24\t0\t[266, 240, 276, 250]\t31\n23:24:24\t\
+    0\t[288, 240, 299, 250]\t32\n23:24:24\t0\t[310, 240, 321, 250]\t33\n23:24:24\t\
+    0\t[333, 240, 343, 250]\t34\n23:24:24\t0\t[376, 240, 387, 250]\t36\n23:24:24\t\
+    0\t[398, 240, 409, 250]\t37\n23:24:24\t0\t[442, 240, 452, 250]\t33\n23:24:24\t\
+    0\t[464, 240, 475, 250]\t39\n23:24:24\t0\t[486, 240, 497, 250]\t49\n23:24:24\t\
+    0\t[508, 240, 519, 250]\t41\n23:24:24\t0\t[530, 240, 540, 250]\t42\n23:24:24\t\
+    0\t[552, 240, 562, 250]\t43\n23:24:24\t0\t[575, 240, 585, 250]\t44\n23:24:24\t\
+    0\t[597, 240, 607, 250]\tAS\n23:24:24\t0\t[195, 267, 217, 383]\tデー タ を 「 源 泉 (スト\
+    \ リー ム\n23:24:24\t0\t[195, 397, 217, 544]\t」 ご と に 完全 に 分 離し て 保存 し ます 。\n23:24:24\t\
+    0\t[245, 267, 255, 282]\t###\n23:24:24\t0\t[239, 295, 260, 449]\tソー スコ ー ド の 構成\
+    \ (_nippo_system/~\n23:24:24\t0\t[261, 278, 282, 451]\t“main.py 全 プ ロ セ ス を 統合\
+    \ 管理 ・ 起 動\n23:24:24\t0\t[283, 278, 303, 539]\t~core/~: 共通 設定 config.py )、 永 続\
+    \ 化 storage.py\n23:24:24\t0\t[305, 278, 328, 417]\t~ocr/~: 画面 解析 、 テ キス ト 抽 出\n\
+    23:24:24\t0\t[327, 329, 350, 417]\t音声 録音 、 文 字 起 こし\n23:24:24\t0\t[349, 279, 370,\
+    \ 486]\tinput monitor/: キー ボー ド 、 マ ウス 活動 監視\n23:24:24\t0\t[393, 267, 415, 520]\t\
+    HH デー タス トリ ー ム の 保存 場所 Documents/Nippo_OCR/\n23:24:24\t0\t[419, 267, 433, 327]\t\
+    raw StreamS/\n23:24:24\t0\t[437, 277, 457, 526]\t**OCR スト リー ム **:~ocr/ocr stream\
+    \ YYYY-MM-DD .tsv~\n23:24:24\t0\t[462, 288, 478, 337]\t“Timestamp\n23:24:24\t\
+    0\t[460, 352, 479, 437]\tblock id box 2d\n23:24:24\t0\t[462, 452, 474, 475]\t\
+    text”\n23:24:24\t0\t[484, 277, 492, 286]\t**\n23:24:24\t0\t[480, 306, 501, 544]\t\
+    声 ス トリ ー ム **:~audio/audio stream\n23:24:24\t0\t[507, 288, 523, 337]\t“Timestamp\n\
+    23:24:24\t0\t[507, 352, 519, 407]\ttranscribed\n23:24:24\t0\t[524, 308, 545, 562]\t\
+    活動 スト リー ム **:~input/input_stream YYYY-MM-DD .tsv~\n23:24:24\t0\t[550, 288, 566,\
+    \ 337]\t“Timestamp\n23:24:24\t0\t[550, 353, 566, 412]\twindow title\n23:24:24\t\
+    0\t[550, 428, 566, 472]\tkey count\n23:24:24\t0\t[550, 487, 566, 546]\tmouse count~\n\
+    23:24:24\t0\t[569, 277, 590, 406]\t**UI Metadata スト リー ム **:\n23:24:24\t0\t[569,\
+    \ 469, 590, 504]\t(計画 中\n23:24:24\t0\t[595, 288, 610, 337]\tTimestamp\n23:24:24\t\
+    0\t[598, 352, 611, 412]\tprocess name\n23:24:24\t0\t[595, 428, 611, 477]\tarea\
+    \ label\n23:24:24\t0\t[593, 492, 611, 526]\tbox 2d\n23:24:24\t0\t[366, 59, 381,\
+    \ 132]\tM+ ai_data_spec.md\n23:24:24\t0\t[920, 555, 944, 676]\t© Antigravity Al\
+    \ (17 分 前 EBS\n23:24:24\t0\t[925, 687, 937, 729]\t7734. 514\n23:24:24\t0\t[928,\
+    \ 96, 935, 100]\tti\n23:24:24\t0\t[933, 819, 936, 821]\t4\n23:24:24\t0\t[934,\
+    \ 871, 937, 873]\t4\n23:24:24\t0\t[957, 983, 967, 987]\t4\n23:24:34\t0\t[59, 8,\
+    \ 77, 18]\tLbs\n23:24:34\t0\t[166, 17, 174, 18]\tbe\n23:24:34\t0\t[929, 52, 933,\
+    \ 53]\t3\n23:24:34\t0\t[17, 446, 27, 451]\t引\n23:24:34\t0\t[17, 543, 27, 562]\t\
+    pec.m\n23:24:34\t0\t[78, 222, 97, 400]\tジュ ー ル 型 デ ー タ パイ プラ イン (Modular Data\
+    \ Pipeline)\n23:24:34\t0\t[78, 423, 97, 617]\t## 2. Stage 2: Transformer Function\
+    \ (結合 ・ 意 味 付 与\n23:24:34\t0\t[127, 282, 142, 335]\t1. Stage 1:\n23:24:34\t0\t\
+    [122, 348, 145, 492]\tスト リー ム ご と の 保存 (Recording)\n23:24:34\t0\t[143, 294, 167,\
+    \ 408]\tデー タス トリ ー ム の 保存 場所\n23:24:34\t0\t[167, 288, 189, 563]\t入 力 活動 スト リー\
+    \ ム **:~input/input stream YYYY-MM-DD .tsv~\n23:24:34\t0\t[194, 288, 210, 337]\t\
+    Timestamp\n23:24:34\t0\t[194, 352, 210, 412]\twindow title\n23:24:34\t0\t[194,\
+    \ 428, 210, 472]\tkey count\n23:24:34\t0\t[194, 488, 210, 546]\tmouse count~\n\
+    23:24:34\t0\t[216, 277, 228, 342]\t**UT Metadata\n23:24:34\t0\t[212, 355, 234,\
+    \ 504]\tスト リー ム **:~ui meta/~(計画 中\n23:24:34\t0\t[238, 288, 254, 337]\tTimestamp\n\
+    23:24:34\t0\t[242, 353, 254, 412]\tprocess name\n23:24:34\t0\t[238, 428, 254,\
+    \ 477]\tarea 1abel\n23:24:34\t0\t[236, 492, 256, 506]\tbox\n23:24:34\t0\t[322,\
+    \ 403, 343, 516]\tFunction:(結合 ・ 意 味 付 与\n23:24:34\t0\t[343, 266, 367, 546]\t\
+    変換 関数 (Transformer) は 、 保 存 さ れ た 複数 の ファ イル を 読み :_..\n23:24:34\t0\t[366, 267,\
+    \ 389, 493]\t時 刻 が 近い も の 同士 を ガッ チャ ンコ (JorN)** し ます 。\n23:24:34\t0\t[409, 290,\
+    \ 432, 372]\t結合 (Join) の 仕組 み\n23:24:34\t0\t[437, 267, 448, 275]\t1.\n23:24:34\t\
+    0\t[431, 287, 455, 452]\tある 時 刻 の OCR テキスト の 座標 を 取得 。\n23:24:34\t0\t[459, 267,\
+    \ 470, 275]\t2.\n23:24:34\t0\t[453, 290, 478, 372]\t同じ 時 刻 の ur Meta\n23:24:34\t\
+    0\t[453, 385, 478, 569]\tか ら 、 そ の 座標 を 「 含 ん で いる 」 エリ アラ ベル\n23:24:34\t0\t[477,\
+    \ 267, 494, 298]\tを 探す 。\n23:24:34\t0\t[504, 267, 515, 275]\t3.\n23:24:34\t0\t\
+    [497, 287, 519, 566]\t座標 (xyy) を 「 エ リア 名 ([Editor])」 に 変換 し て NsL に 書き 出\n23:24:34\t\
+    0\t[522, 267, 537, 280]\tす 。\n23:24:34\t0\t[565, 279, 582, 312]\tスス リ ツ ト\n23:24:34\t\
+    0\t[586, 277, 611, 568]\t“ERGG**: OCR プロ グラ ム は ウィ ンド ウ 構 造 を 知ら な く て いい 。U メ\n\
+    23:24:34\t0\t[128, 240, 138, 249]\t26\n23:24:34\t0\t[150, 240, 160, 249]\t37\n\
+    23:24:34\t0\t[174, 240, 184, 250]\t42\n23:24:34\t0\t[196, 240, 206, 250]\t43\n\
+    23:24:34\t0\t[218, 240, 228, 250]\t44\n23:24:34\t0\t[240, 240, 251, 250]\t45\n\
+    23:24:34\t0\t[261, 240, 272, 250]\t46\n23:24:34\t0\t[284, 240, 294, 250]\t47\n\
+    23:24:34\t0\t[306, 240, 316, 250]\t48\n23:24:34\t0\t[328, 240, 339, 250]\t49\n\
+    23:24:34\t0\t[349, 240, 360, 250]\t50\n23:24:34\t0\t[394, 240, 404, 250]\t51\n\
+    23:24:34\t0\t[416, 240, 427, 250]\t52\n23:24:34\t0\t[437, 240, 448, 250]\t53\n\
+    23:24:34\t0\t[460, 240, 470, 250]\t54\n23:24:34\t0\t[504, 240, 514, 250]\t55\n\
+    23:24:34\t0\t[547, 240, 558, 250]\t56\n23:24:34\t0\t[570, 240, 580, 250]\t57\n\
+    23:24:34\t0\t[592, 240, 602, 250]\t58\n23:24:34\t0\t[837, 737, 860, 920]\t2. Stage\
+    \ 2: Transformer Function (結合 ・ 意 味 付 与 】\n23:24:34\t0\t[919, 514, 942, 603]\t\
+    © Antigravity Al (17 分 前\n23:24:34\t0\t[925, 646, 938, 726]\t47 49, Fi) 46 (44\
+    \ 個 選択\n23:24:34\t0\t[924, 841, 938, 849]\t{}\n23:24:51\t0\t[59, 8, 77, 18]\t\
+    LL,\n23:24:51\t0\t[928, 96, 935, 100]\tti\n23:24:51\t0\t[15, 529, 24, 530]\t1\n\
+    23:24:51\t0\t[17, 446, 27, 451]\tDI\n23:24:51\t0\t[17, 543, 27, 562]\tpec.m\n\
+    23:24:51\t0\t[56, 634, 58, 635]\t』\n23:24:51\t0\t[55, 691, 65, 725]\tOo system\n\
+    23:24:51\t0\t[78, 222, 98, 444]\tpo OCR: モジ ュー ル 型 デー タ パ イ プラ イン (Modular Data\
+    \ Pipeline)\n23:24:51\t0\t[82, 467, 97, 617]\t## 3. Stage 3: Nippo Semantic Log\
+    \ (NSL)\n23:24:51\t0\t[123, 267, 144, 520]\t## 2. Stage 2: Transformer Function\
+    \ (結合 ・ 意 味 付 与\n23:24:51\t0\t[167, 267, 189, 372]\tHt 結合 (Join) の 仕組 み\n23:24:51\t\
+    0\t[195, 267, 205, 275]\t1.\n23:24:51\t0\t[188, 287, 212, 452]\tある 時 刻 の ocR テ\
+    \ キス ト の 座標 を 取得 。\n23:24:51\t0\t[217, 267, 227, 275]\t2.\n23:24:51\t0\t[211,\
+    \ 290, 234, 372]\t同じ 時 刻 の UI Meta\n23:24:51\t0\t[211, 386, 234, 569]\tか ら 、 そ\
+    \ の 座標 を 「 含 ん で いる 」 エリ アラ ベル\n23:24:51\t0\t[235, 267, 252, 298]\tを 探す 。\n23:24:51\t\
+    0\t[262, 267, 272, 275]\t3.\n23:24:51\t0\t[255, 287, 278, 566]\t座標 (x,y) を 「 エ\
+    \ リア 名 ([Editor])」 に 変換 し て NsL に 書き 出\n23:24:51\t0\t[279, 267, 295, 280]\tGio\n\
+    23:24:51\t0\t[323, 287, 339, 312]\tリ ツ ト\n23:24:51\t0\t[343, 339, 366, 568]\t\
+    OCR プロ グラ ム は ウィ ンド ウ 構 造 を 知ら な く て いい 。U エ メ\n23:24:51\t0\t[365, 267, 387, 471]\t\
+    タデ ー タ 取得 プロ グラ ム は 文字 を 知ら な く て いい 。\n23:24:51\t0\t[387, 287, 410, 573]\t後付け\
+    \ **: あと か ら 「pPc の 負荷 情報 スト リー ム 」 を 足し て も 、 変 換 関\n23:24:51\t0\t[409, 267,\
+    \ 432, 527]\t数 (Transformer) を 少し 書き 換え る だ け で 日 報 に 反映 で きま す 。\n23:24:51\t\
+    0\t[503, 267, 513, 290]\t## 3.\n23:24:51\t0\t[501, 327, 517, 461]\t3: Nippo Semantic\
+    \ Log (NSL)\n23:24:51\t0\t[518, 267, 542, 564]\t結合 後 の 最 終 形式 で す 。LLM に 「 ど の\
+    \ スト リー ム か ら 来 た 情報 か 」 が 伝 わ\n23:24:51\t0\t[542, 267, 563, 335]\tる よう に し ます\
+    \ 。\n23:24:51\t0\t[589, 272, 605, 302]\tyaml\n23:24:51\t0\t[128, 240, 139, 249]\t\
+    49\n23:24:51\t0\t[151, 240, 162, 249]\t51\n23:24:51\t0\t[173, 240, 184, 249]\t\
+    52\n23:24:51\t0\t[195, 240, 205, 249]\t53\n23:24:51\t0\t[217, 240, 227, 250]\t\
+    54\n23:24:51\t0\t[261, 240, 272, 249]\t55\n23:24:51\t0\t[305, 240, 315, 250]\t\
+    56\n23:24:51\t0\t[327, 240, 338, 249]\t57\n23:24:51\t0\t[349, 240, 360, 250]\t\
+    58\n23:24:51\t0\t[201, 607, 204, 613]\tー~\n23:24:51\t0\t[200, 584, 202, 587]\t\
+    —\n23:24:51\t0\t[228, 617, 234, 620]\t0\n23:24:51\t0\t[393, 240, 403, 250]\tっ\
+    \ 9\n23:24:51\t0\t[437, 240, 448, 250]\t60\n23:24:51\t0\t[459, 240, 469, 249]\t\
+    61\n23:24:51\t0\t[481, 240, 491, 249]\t62\n23:24:51\t0\t[503, 240, 514, 250]\t\
+    63\n23:24:51\t0\t[525, 240, 536, 250]\t64\n23:24:51\t0\t[569, 240, 579, 249]\t\
+    65\n23:24:51\t0\t[591, 240, 602, 250]\t66\n23:24:51\t0\t[843, 918, 857, 924]\t\
+    と\n23:24:51\t0\t[843, 895, 856, 902]\t1\n23:24:51\t0\t[844, 721, 854, 734]\tANH\n\
+    23:24:51\t0\t[845, 746, 855, 752]\tS]\n23:24:51\t0\t[845, 841, 857, 869]\ttlOn\
+    \ (#5\n23:24:51\t0\t[848, 763, 850, 764]\t』\n23:24:51\t0\t[920, 559, 942, 649]\t\
+    © Antigravity Al (17 分 前\n23:24:51\t0\t[925, 691, 938, 728]\t17 63, 57\n23:25:09\t\
+    0\t[59, 8, 77, 18]\tLbs\n23:25:09\t0\t[166, 17, 174, 18]\tbe\n23:25:09\t0\t[929,\
+    \ 52, 933, 53]\t3\n23:25:09\t0\t[17, 446, 27, 451]\t引\n23:25:09\t0\t[17, 543,\
+    \ 27, 562]\tpec.m\n23:25:09\t0\t[56, 633, 58, 635]\t』\n23:25:09\t0\t[55, 641,\
+    \ 67, 725]\tactoring INIDDO system\n23:25:09\t0\t[55, 937, 65, 961]\tTU\n23:25:09\t\
+    0\t[91, 652, 106, 967]\tListing subdirectories of raw_streams to provide complete\
+    \ path information to the\n23:25:09\t0\t[120, 652, 127, 668]\tuser\n23:25:09\t\
+    0\t[145, 596, 149, 609]\tEE\n23:25:09\t0\t[155, 594, 165, 613]\tーー・ ー\n23:25:09\t\
+    0\t[167, 640, 186, 969]\t失礼 いた し まし た 。 確か に c:\\Users\\y86as\\Nippo\\nippo_ system\\\
+    raw streams フォ ル ダ が 存在\n23:25:09\t0\t[193, 640, 212, 716]\tする こと を 確認 し まし た\
+    \ 。\n23:25:09\t0\t[217, 640, 236, 740]\tフォ ル ダ 層 は 以下 の 通り で す\n23:25:09\t0\t\
+    [261, 645, 270, 659]\ttext\n23:25:09\t0\t[298, 648, 311, 769]\tc:¥Users¥y86as¥Ni\
+    \ ppo¥nippo_system¥\n23:25:09\t0\t[317, 651, 331, 716]\tトーー raw_streams/\n23:25:09\t\
+    0\t[339, 669, 352, 705]\tトー pocr/\n23:25:09\t0\t[337, 748, 355, 826]\t<— OCR の\
+    \ TSV は ここ で す\n23:25:09\t0\t[359, 669, 373, 712]\tトー input/\n23:25:09\t0\t[357,\
+    \ 762, 375, 844]\t入力 活動 の TSV は ここ で す\n23:25:09\t0\t[380, 669, 393, 712]\tトー\
+    \ audio/\n23:25:09\t0\t[401, 669, 414, 719]\tレー ui_meta/\n23:25:09\t0\t[421, 651,\
+    \ 434, 691]\tトー core/\n23:25:09\t0\t[441, 651, 455, 687]\tトー ocr/\n23:25:09\t\
+    0\t[461, 665, 478, 670]\t一\n23:25:09\t0\t[508, 640, 527, 967]\tも し か する と 、 エク\
+    \ スプ ロー ラー 上 で 表示 が 更新 され て いな い 可 能 性 が ある た め 、 一 度 フ ォ ル ダ 内 を 更新\n23:25:09\t\
+    0\t[535, 645, 549, 755]\t(F5) し て いた だ く か 、 直接 パス を\n23:25:09\t0\t[533, 767,\
+    \ 552, 847]\tいて いた だ けれ ば 幸い で す 。\n23:25:09\t0\t[557, 640, 576, 971]\tも し それ\
+    \ で も 見 当たら な い 場 合 、 別 の 場所 に 作成 され て いる 可能 性 が ある た め 、 再度 詳し く 調査 いた し\n23:25:09\t\
+    0\t[582, 640, 600, 656]\tます 。\n23:25:09\t0\t[484, 270, 491, 275]\tbef\n23:25:09\t\
+    0\t[505, 316, 516, 325]\te-\n23:25:09\t0\t[510, 482, 527, 495]\tEdit\n23:25:09\t\
+    0\t[510, 525, 527, 542]\tChat\n23:25:09\t0\t[636, 658, 652, 694]\tconfig.py\n\
+    23:25:09\t0\t[637, 948, 650, 965]\tOpen\n23:25:09\t0\t[693, 916, 710, 982]\tGood\
+    \ の Bad ⑦\n23:25:09\t0\t[775, 639, 796, 742]\tぐ [5 0 Files with Changes\n23:25:09\t\
+    0\t[778, 910, 795, 975]\tン ニ Review Changes\n23:25:09\t0\t[819, 637, 839, 980]\t\
+    うー ん いい 感じ か な 、 じ ゃ あ 2. Stage 2: Transformer Function (結合 ・ 意 味 付 与 と Stage\
+    \ 3: Nippo\n23:25:09\t0\t[844, 637, 859, 687]\tSemantic Log\n23:25:09\t0\t[838,\
+    \ 713, 859, 772]\tを や っ て いこ う 。+]\n23:25:09\t0\t[920, 514, 942, 726]\t© Antigravity\
+    \ Al (17 分 前 上 書き 行 63、 列 40 33 個 選択\n23:25:15\t0\t[625, 706, 637, 708]\t1\n23:25:15\t\
+    0\t[623, 719, 638, 813]\tふく すう あ っ た の どこ や っ た の\n23:25:15\t0\t[626, 855, 637,\
+    \ 862]\tOQ\n23:25:15\t0\t[659, 705, 676, 745]\t2 複数 行\n23:25:15\t0\t[663, 855,\
+    \ 674, 862]\tOQ\n23:25:15\t0\t[697, 705, 714, 735]\t3 複数\n23:25:15\t0\t[701, 855,\
+    \ 712, 862]\tOQ\n23:25:15\t0\t[735, 705, 758, 744]\t4 複数 の\n23:25:15\t0\t[738,\
+    \ 855, 750, 863]\tQ\n23:25:15\t0\t[754, 650, 770, 657]\t[5\n23:25:15\t0\t[759,\
+    \ 910, 770, 912]\tY=\n23:25:15\t0\t[760, 923, 772, 975]\tReview Changes\n23:25:15\t\
+    0\t[772, 705, 795, 744]\t5 複数 回\n23:25:15\t0\t[776, 855, 788, 863]\tQ\n23:25:15\t\
+    0\t[800, 637, 819, 694]\tうー ん いい 感じ か た\n23:25:15\t0\t[799, 868, 829, 980]\t(9\
+    \ 意味 付与 と Stage 3: Nippo\n23:25:15\t0\t[816, 637, 838, 723]\tSemantic Log (I 。。\n\
+    23:25:15\t0\t[819, 799, 839, 802]\t_-\n23:25:15\t0\t[820, 883, 840, 981]\ttion\
+    \ (結合 ・ 意 味 付 与 が エラ\n23:25:15\t0\t[841, 637, 861, 734]\tー な くい ける か な あと ふく すう\n\
+    23:25:15\t0\t[957, 983, 967, 987]\t5\n23:25:20\t0\t[622, 722, 638, 793]\t1 立ち\
+    \ 上 が り 間\n23:25:20\t0\t[625, 823, 638, 830]\tQ\n23:25:20\t0\t[662, 722, 675,\
+    \ 726]\t2\n23:25:20\t0\t[659, 753, 675, 772]\t上 が り\n23:25:20\t0\t[663, 823, 674,\
+    \ 830]\tOQ\n23:25:20\t0\t[697, 722, 713, 757]\t3 立上り\n23:25:20\t0\t[701, 823,\
+    \ 712, 830]\tOQ\n23:25:20\t0\t[734, 721, 758, 775]\t4 立ち 上 が る\n23:25:20\t0\t\
+    [759, 693, 770, 711]\tVith\n23:25:20\t0\t[771, 722, 792, 781]\t5 立ち 上 が っ た\n\
+    23:25:20\t0\t[810, 706, 814, 708]\t、\n23:25:20\t0\t[816, 719, 824, 724]\t“\n23:25:20\t\
+    0\t[823, 693, 837, 712]\tNsDt\n23:25:20\t0\t[837, 698, 860, 772]\tあと 複数 た ちあ が\
+    \ t t|\n23:25:20\t0\t[739, 823, 750, 830]\tOQ\n23:25:20\t0\t[777, 823, 788, 830]\t\
+    OQ\n23:25:20\t0\t[800, 836, 828, 884]\tウ の yn (結合 ・\n23:25:20\t0\t[823, 850, 834,\
+    \ 884]\tmer Func\n23:25:26\t0\t[759, 711, 774, 742]\tChanges\n23:25:26\t0\t[800,\
+    \ 712, 819, 852]\tじゃ や あ 2. Stage 2: Transformer Functio\n23:25:26\t0\t[821, 710,\
+    \ 838, 852]\tを や っ て いこ う 。 ます 2. Stage 2: Transforr\n23:25:26\t0\t[838, 710,\
+    \ 859, 819]\t複数 立ち 上 が っ て な いか 確認 し\n23:25:34\t0\t[104, 639, 124, 957]\tうー ん\
+    \ いい 感じ か な 、 じゃ あ 2. Stage 2: Transformer Function (結合 ・ 意 味 付 与 と Stage 3:\n\
+    23:25:34\t0\t[128, 639, 143, 714]\tNippo Semantic Log\n23:25:34\t0\t[125, 742,\
+    \ 146, 960]\tを や っ て いこ う 。 ます 2. Stage 2: Transformer Function (結合 ・ 意\n23:25:34\t\
+    0\t[146, 639, 167, 868]\t味 付 与 が エラ ー な くい ける か な あと 複数 立ち 上 が っ て な いか 確認 し て\n\
+    23:25:34\t0\t[145, 968, 158, 976]\tつ\n23:25:34\t0\t[199, 634, 213, 676]\tGenerating.\n\
+    23:25:34\t0\t[797, 639, 816, 742]\tぐ [5 0 Files With Changes\n23:25:34\t0\t[802,\
+    \ 923, 814, 975]\tReview Changes\n23:25:34\t0\t[837, 636, 861, 686]\tAsk anything,\n\
+    23:25:34\t0\t[844, 700, 857, 801]\tto mention, for workflows\n23:25:44\t0\t[194,\
+    \ 649, 209, 704]\tThought for 1s\n23:25:44\t0\t[230, 640, 245, 775]\tImplementing\
+    \ Stage 2: Transformer\n23:25:44\t0\t[230, 786, 245, 878]\tStage 3: NSL Generation\n\
+    23:25:44\t0\t[252, 640, 267, 975]\tI'm moving forward with the modular pipeline\
+    \ by implementing Stage 2 (Joiner) and Stage\n23:25:44\t0\t[277, 640, 292, 971]\t\
+    3 (NSL). First, I'll ensure no duplicate processes are running and update the\
+    \ task checklist.\n23:25:44\t0\t[319, 640, 334, 705]\tProgress Updates\n23:25:44\t\
+    0\t[319, 923, 334, 974]\tCollapse all マ\n23:25:44\t0\t[351, 642, 366, 857]\t1\
+    \ Checking for zombie processes and updating task list\n23:25:44\t0\t[393, 659,\
+    \ 404, 716]\tRun command?\n23:25:44\t0\t[428, 658, 441, 723]\t..\\nippo_system\n\
+    23:25:44\t0\t[428, 737, 441, 872]\tGet-CimInstance Min32 Process\n23:25:44\t0\t\
+    [425, 886, 443, 944]\tMhere-Objec モ\n23:25:44\t0\t[447, 662, 464, 956]\tぁ .Name\
+    \ -like ‘python*'-and .CommandLine -like '*nippo_system\n23:25:44\t0\t[471, 659,\
+    \ 477, 666]\t**\n23:25:44\t0\t[471, 691, 484, 858]\tSelect-Object ProcessTd。 CommandLine\n\
+    23:25:44\t0\t[505, 890, 520, 912]\tReject\n23:25:44\t0\t[505, 925, 516, 955]\t\
+    RunAlt+\n23:25:44\t0\t[505, 658, 520, 698]\tAlways run\n23:25:44\t0\t[550, 654,\
+    \ 567, 701]\t(5 Analyzed\n23:25:44\t0\t[552, 716, 563, 732]\tTask\n23:25:44\t\
+    0\t[603, 640, 622, 735]\t£2 1 Step Requires Input\n23:25:44\t0\t[607, 938, 622,\
+    \ 964]\tExpand\n23:25:44\t0\t[657, 634, 671, 667]\tWaitind..\n23:25:44\t0\t[759,\
+    \ 765, 772, 816]\tA Antigravity\n23:25:44\t0\t[764, 942, 766, 949]\tnen\n23:25:44\t\
+    0\t[760, 968, 770, 974]\tx\n23:25:44\t0\t[801, 763, 818, 922]\tRequesting your\
+    \ permission in Terminal:\n23:25:44\t0\t[823, 763, 839, 974]\tCommand: Get-Cimlnstance\
+    \ Win32_Process Where-\n23:25:44\t0\t[845, 763, 862, 851]\tObject .Name -like\n\
+    23:25:44\t0\t[845, 893, 858, 911]\t-and\n23:25:44\t0\t[865, 767, 882, 851]\t.CommandLine\
+    \ -like\n23:25:44\t0\t[866, 933, 879, 960]\tSelect-\n23:25:44\t0\t[888, 763, 905,\
+    \ 892]\tObject Processld, CommandLine\n23:25:44\t0\t[928, 752, 937, 762]\tー ス\n\
+    23:25:44\t0\t[928, 781, 936, 801]\tUIF-8\n23:25:44\t0\t[928, 812, 936, 828]\t\
+    CRLF\n23:25:44\t0\t[928, 841, 938, 890]\tて 7) Markdown\n23:25:44\t0\t[928, 901,\
+    \ 939, 943]\tAntigravity-\n"
+- time_window: '23:25'
+  active_app: Nippo - Antigravity - ai_data_spec.md
+  input_activity:
+    keys: 69
+    mouse_clicks: 319
+  ocr_context: ''

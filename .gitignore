@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+.venv/
+ENV/
+
+# Nippo System Data (Huge files or local logs)
+nippo_system/data/logs.db
+nippo_system/data/*.log
+nippo_system/data/*.png
+nippo_system/data/ocr_results*
+nippo_system/raw_streams/
+nippo_system/transformer/semantic_data/
+nippo_system/reports/*.yaml
+nippo_system/reports/*.md
+Nippo_OCR_App/
+data/
+raw_streams/
+reports/
+
+# PyInstaller
+*.spec
+NippoSystem.spec
+
+# OS
+.DS_Store
+Thumbs.db
