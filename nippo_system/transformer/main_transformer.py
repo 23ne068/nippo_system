@@ -36,7 +36,9 @@ class MainTransformer:
         data = []
         if not os.path.exists(self.mouse_path): return data
         import csv
+        csv.field_size_limit(10**7) # 追加: フィールド長制限を緩和
         with open(self.mouse_path, "r", encoding="utf-8") as f:
+            logger.info(f"Loading mouse data from {self.mouse_path}")
             reader = csv.reader(f, delimiter="\t")
             for row in reader:
                 if len(row) >= 5:
@@ -180,7 +182,9 @@ class MainTransformer:
         data = []
         if not os.path.exists(path): return data
         import csv
+        csv.field_size_limit(10**7) # 追加: フィールド長制限を緩和
         with open(path, "r", encoding="utf-8") as f:
+            logger.info(f"Loading OCR stream from {path}")
             reader = csv.reader(f, delimiter="\t")
             for row in reader:
                 if len(row) >= 4:

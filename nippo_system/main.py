@@ -66,7 +66,7 @@ class NippoSystemManager:
         self.processes = []
         
     def start_all(self):
-        self.cleanup_zombies()
+        # self.cleanup_zombies()
         
         if ENABLE_INPUT_MONITOR:
             self._spawn("nippo_system.input_monitor.run_input", "InputMonitor")
@@ -74,7 +74,7 @@ class NippoSystemManager:
             self._spawn("nippo_system.audio.run_audio", "AudioMonitor")
         if ENABLE_SCREEN_OCR:
             self._spawn("nippo_system.ocr.run_ocr", "ScreenOCR (WinRT/Tesseract)")
-            
+
     def _spawn(self, module_name, friendly_name):
         creation_flags = 0x00000040 if os.name == 'nt' else 0 # IDLE_PRIORITY_CLASS
         
@@ -108,18 +108,22 @@ class NippoSystemManager:
         self.processes = []
 
     def cleanup_zombies(self):
+        import os
         my_pid = os.getpid()
-        ps_cmd = "Get-CimInstance Win32_Process | Where-Object { $_.Name -like 'python*' -and $_.CommandLine -like '*nippo_system*' } | Select-Object ProcessId"
+        ps_cmd = 'Get-CimInstance Win32_Process | Where-Object { $_.Name -like "python*" -and $_.CommandLine -like "*nippo_system*" } | Select-Object ProcessId'
         try:
-            result = subprocess.run(["powershell", "-Command", ps_cmd], capture_output=True, text=True)
+            result = subprocess.run(["powershell", "-Command", ps_cmd], capture_output=True, text=True, timeout=10)
             lines = result.stdout.strip().split('\n')
             for line in lines:
-                line = line.strip()
-                if not line.isdigit(): continue
-                pid = int(line)
-                if pid == my_pid: continue
-                subprocess.run(["taskkill", "/F", "/PID", str(pid)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        except Exception:
+                if "ProcessId" in line or "---" in line or not line.strip(): continue
+                parts = line.strip().split()
+                if not parts: continue
+                try:
+                    pid = int(parts[0])
+                    if pid == my_pid: continue
+                    subprocess.run(["taskkill", "/F", "/PID", str(pid)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                except: pass
+        except:
             pass
 
     def get_status(self):
@@ -365,23 +369,34 @@ if __name__ == "__main__":
 
     start_hidden = "--tray" in sys.argv
 
-    # 1. バックグラウンドプロセスの起動
-    manager = NippoSystemManager()
-    manager.start_all()
-    
-    # 2. トレイ常駐アイコンの準備
-    icon, tray_controller = setup_tray()
-    
-    # 3. GUIメイン画面の準備
-    app = NippoDashboard(manager, icon)
-    tray_controller.app = app
-    
-    # 4. pystray（常駐アイコン）を裏の監視スレッドで動かす
-    tray_thread = threading.Thread(target=icon.run, daemon=True)
-    tray_thread.start()
-    
-    # 5. Tkinter（メイン画面）のループ開始
-    if start_hidden:
-        app.withdraw() # スタートアップ時は画面を出さずにトレイへ直行
+    try:
+        print("1. Starting System Manager...", flush=True)
+        # 1. バックグラウンドプロセスの起動
+        manager = NippoSystemManager()
+        manager.start_all()
+        print("2. System Manager started. Setting up tray...", flush=True)
         
-    app.mainloop()
+        # 2. トレイ常駐アイコンの準備
+        icon, tray_controller = setup_tray()
+        print("3. Tray setup OK. Creating Dashboard...", flush=True)
+        
+        # 3. GUIメイン画面の準備
+        app = NippoDashboard(manager, icon)
+        tray_controller.app = app
+        print("4. Dashboard created. Running tray thread...", flush=True)
+        
+        # 4. pystray（常駐アイコン）を裏の監視スレッドで動かす
+        tray_thread = threading.Thread(target=icon.run, daemon=True)
+        tray_thread.start()
+        print("5. Tray thread started. Entering mainloop...", flush=True)
+        
+        # 5. Tkinter（メイン画面）のループ開始
+        if start_hidden:
+            app.withdraw() # スタートアップ時は画面を出さずにトレイへ直行
+            
+        app.mainloop()
+    except Exception as e:
+        import traceback
+        with open("error_log.txt", "w", encoding="utf-8") as f:
+            f.write(str(e) + "\n" + traceback.format_exc())
+        sys.exit(1)
